@@ -509,8 +509,6 @@ img {
 /*=============== ABOUT ===============*/
 
 .about-me {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   row-gap: 2rem;
 }
 
@@ -1123,8 +1121,6 @@ img {
     grid-template-columns: 480px 1fr;
     align-items: center;
     column-gap: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     justify-content: left;
   }
 
@@ -1175,7 +1171,6 @@ img {
     justify-content: center;
     align-items: center;
     column-gap: 8rem;
-    padding-block: 3rem;
   }
 
   .contact-content {
