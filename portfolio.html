@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Forgach Rebeka - Portfolio</title>
+</head>
+
+<body>
+  <!--==================== CURSOR ====================-->
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="portfolio.html" class="nav-logo">
+        <span class="logo-drop">
+          <img src="assets/img/logo.png" />
+        </span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link active-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main" id="top">
+    <!--==================== HOME ====================-->
+    <section class="home section">
+      <img src="assets/img/portfolio/title.png" alt="Title" class="home-img" />
+      <img src="assets/img/portfolio/default-me.png" data-hover="assets/img/portfolio/hover-me.png" alt="Character"
+        class="me-img" />
+    </section>
+
+    <!--==================== WORK PIECES ====================-->
+    <section class="portfolio section">
+      <div class="portfolio-container">
+        <!--filters-->
+        <div class="portfolio-filters container">
+          <a data-name="all" class="slide-btn active">
+            <img src="/assets/img/portfolio/all-icon.png" />
+            <span>All</span>
+          </a>
+          <a data-name="games" class="slide-btn">
+            <img src="/assets/img/portfolio/games-icon.png" />
+            <span>Games</span>
+          </a>
+          <a data-name="3d" class="slide-btn">
+            <img src="/assets/img/portfolio/3d-icon.png" />
+            <span>3D</span>
+          </a>
+          <a data-name="2d" class="slide-btn">
+            <img src="/assets/img/portfolio/2d-icon.png" />
+            <span>2D</span>
+          </a>
+        </div>
+
+        <!--work cards-->
+
+        <div class="portfolio-content">
+          <div class="filterable-cards pic-container grid">
+            <div class="card" data-name="games">
+              <img src="assets/img/about/pic-1.JPG" alt="">
+              <div class="card-body">
+                <h3 class="card-title">Game Art</h3>
+              </div>
+            </div>
+            <div class="card" data-name="2d">
+              <img src="assets/img/about/pic-1.JPG" alt="">
+              <div class="card-body">
+                <h3 class="card-title">Game Art</h3>
+              </div>
+            </div>
+            <div class="card" data-name="3d">
+              <img src="assets/img/about/pic-1.JPG" alt="">
+              <div class="card-body">
+                <h3 class="card-title">Game Art</h3>
+              </div>
+            </div>
+            <div class="card" data-name="games">
+              <img src="assets/img/about/pic-1.JPG" alt="">
+              <div class="card-body">
+                <h3 class="card-title">Game Art</h3>
+              </div>
+            </div>
+            <div class="card" data-name="2d">
+              <img src="assets/img/about/pic-1.JPG" alt="">
+              <div class="card-body">
+                <h3 class="card-title">Game Art</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer-container container">
+      <button type="submit" class="pop-btn">
+        <span class="pop-icon pop-icon--footer">
+          <img src="/assets/img/reach-icon.png" />
+        </span>
+        <span class="pop-label">Reach out!</span>
+      </button>
+
+      <div class="footer-content">
+        <div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="Facebook">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="Instagram">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="Twitter/X">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="footer-copy">
+      &#169; All Rights Reserved By Forgach Rebeka
+    </span>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#top" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

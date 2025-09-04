@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Forgach Rebeka - Portfolio</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="portfolio.html" class="nav-logo">
+                <span class="logo-drop">
+                    <img src="assets/img/Logo.png" />
+                </span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main" id="top">
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section">
+            <div class="contact-top">
+                <h2 class="section-title">
+                    <span>REACH OUT!</span>
+                </h2>
+                <p class="contact-description">
+                    Let’s make something together
+                </p>
+            </div>
+
+
+            <div class="contact-container container">
+                <form action="#" class="contact-form">
+                    <!-- Name -->
+                    <div class="field">
+                        <input class="form-input" type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Name</label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="field">
+                        <input class="form-input" type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email address</label>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="field field--textarea">
+                        <textarea class="form-input" id="message" name="message" rows="6" placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <!-- Submit (centered) -->
+                    <button type="submit" class="pop-btn">
+                        <span class="pop-icon" aria-hidden="true">
+                            <img src="/assets/img/contact/send-icon.png" />
+                        </span>
+                        <span class="pop-label">Send!</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
