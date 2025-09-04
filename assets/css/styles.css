@@ -378,12 +378,20 @@ img {
   min-height: 100vh;
   overflow: hidden;
 
+  /* Top layer: hides the image in the center; fades outwards */
   background-image:
-    linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, 0)),
+    radial-gradient(circle at center,
+      var(--body-color) 0%,
+      var(--body-color) 30%,
+      /* solid center radius */
+      rgba(19, 20, 13, 0) 60%
+      /* fade to transparent */
+    ),
     url("../img/Background.png");
 
-  background-size: 100% 50%, cover;
-  background-position: bottom center, center;
+  background-size: 100% 100%, cover;
+  /* gradient spans section; image covers */
+  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
 }
 
