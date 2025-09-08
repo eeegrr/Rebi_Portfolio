@@ -90,10 +90,6 @@ img {
   margin-inline: 1.5rem;
 }
 
-.pic-container {
-  max-width: 1320px;
-  margin-inline: 1.5rem;
-}
 
 .grid {
   display: grid;
@@ -591,6 +587,8 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   padding-top: 2rem;
+  max-width: 1320px;
+  margin-inline: 1.5rem;
 }
 
 .picture-container .picture-img {
@@ -827,6 +825,26 @@ img {
   background-repeat: no-repeat, no-repeat;
 }
 
+.work-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  text-align: center;
+  height: 80px;
+}
+
+.work-title span {
+  color: var(--first-color);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
@@ -989,7 +1007,7 @@ img {
     margin-inline: auto;
   }
 
-  .pic-container {
+  .picture-container {
     margin-inline: auto;
   }
 
