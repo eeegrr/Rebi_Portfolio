@@ -268,7 +268,7 @@ img {
   display: flex;
   align-items: end;
   justify-content: center;
-  transform: translateY(-1.5rem);
+  transform: translateY(-0.5rem);
   will-change: transform;
 }
 
@@ -386,7 +386,7 @@ img {
   z-index: 1;
   width: clamp(120px, 80vw, 1100px);
   left: 50%;
-  top: 18vh;
+  top: 14vh;
   transform: translateX(-50%);
   pointer-events: none;
 }
@@ -394,11 +394,10 @@ img {
 .me-img {
   z-index: 2;
   width: clamp(120px, 30vw, 600px);
-  left: 65%;
-  top: 54vh;
+  left: 70%;
+  top: 52vh;
   transform: translate(-50%, -50%);
   pointer-events: auto !important;
-
 }
 
 /*=============== MAIN ===============*/
@@ -406,33 +405,40 @@ img {
   padding-bottom: 2rem;
 }
 
-.filterable-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(320px, 1fr));
-  gap: 48px;
-  align-items: start;
+.portfolio-content {
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  --card-w: 400px;
+  --card-gap: 48px;
 }
 
-/* Card */
+/* Grid */
+.filterable-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card-w));
+  gap: var(--card-gap);
+  justify-content: center;
+  align-content: start;
+}
+
+/* Card (fixed size; won’t stretch) */
 .filterable-cards .card {
-  position: relative;
+  width: var(--card-w);
+  aspect-ratio: 4 / 3;
   border-radius: 2rem;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
-  /* controls card size consistently */
   border: 3px solid var(--first-color);
   filter: drop-shadow(var(--gallery-img));
 }
 
-/* Image (anchor focus to the bottom center) */
+/* Image */
 .filterable-cards .card img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* fill the card without distortion */
   object-position: 50% 100%;
-  /* center horizontally, stick to bottom */
   transform: translateZ(0);
   z-index: 0;
 }
@@ -453,11 +459,8 @@ img {
   gap: 8px;
   background: var(--first-color);
   z-index: 2;
-  /* sit above gradient & image */
   isolation: isolate;
-  /* create its own stacking context */
 }
-
 
 .filterable-cards .card-body::before {
   content: "";
@@ -465,19 +468,15 @@ img {
   left: 0;
   right: 0;
   bottom: 100%;
-  /* anchor to the top edge of the panel */
   height: 1000px;
-  /* tall; clipped by .card overflow */
   background: linear-gradient(to top,
       rgba(184, 92, 49, 1) 0%,
       rgba(184, 92, 49, .50) 5%,
       rgba(184, 92, 49, 0) 10%);
   opacity: 0;
-  /* show on hover/focus */
   transition: opacity .35s ease;
   pointer-events: none;
   z-index: -1;
-  /* under panel text, above the image */
 }
 
 /* Show gradient on card hover/focus */
@@ -498,7 +497,6 @@ img {
 .about-me {
   row-gap: 2rem;
 }
-
 
 /* left column: picture and CV button */
 .about-picture {
@@ -587,7 +585,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   padding-top: 2rem;
-  max-width: 1320px;
+  max-width: 1360px;
   margin-inline: 1.5rem;
 }
 
@@ -742,9 +740,9 @@ img {
   overflow: hidden;
   background-image:
     linear-gradient(to bottom, rgba(19, 20, 13, 1), rgba(19, 20, 13, .9), rgba(19, 20, 13, 0)),
-    url("../img/Background.png");
-  background-size: 100% 50%, cover;
-  background-position: top center, top;
+    var(--ft-image);
+  background-size: 100% 100%, cover;
+  background-position: bottom center, bottom;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -926,14 +924,32 @@ img {
     row-gap: 1.5rem;
   }
 
-  .shop-container {
-    grid-template-columns: 160px;
+  .picture-container {
+    grid-template-columns: 200px;
     justify-content: center;
   }
 
-  .picture-container {
-    grid-template-columns: 160px;
-    justify-content: center;
+  .filterable-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .filterable-cards .card {
+    width: min(100%, 320px);
+  }
+
+  .home-img {
+    top: 20vh;
+    left: 50%;
+    width: clamp(120px, 80vw, 600px);
+    ;
+  }
+
+  .me-img {
+    top: 52vh;
+    left: 65%;
+    width: clamp(130px, 12vw, 240px);
+    ;
   }
 
 }
@@ -947,11 +963,6 @@ img {
     justify-content: center;
   }
 
-  .shop-container {
-    grid-template-columns: repeat(2, 160px);
-    justify-content: center;
-  }
-
   .home-img {
     top: 18vh;
     left: 50%;
@@ -960,15 +971,20 @@ img {
   }
 
   .me-img {
-    top: 54vh;
-    left: 60%;
-    width: clamp(120px, 12vw, 240px);
+    top: 53vh;
+    left: 65%;
+    width: clamp(130px, 12vw, 240px);
     ;
   }
 
   .picture-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
+  }
+
+  .portfolio-content {
+    --card-w: 260px;
+    --card-gap: 28px;
   }
 }
 
@@ -995,6 +1011,11 @@ img {
     gap: 1.75rem;
   }
 
+  .portfolio-content {
+    --card-w: 280px;
+    --card-gap: 32px;
+  }
+
   .home-img {
     top: 16vh;
     left: 50%;
@@ -1003,7 +1024,7 @@ img {
   }
 
   .me-img {
-    top: 56vh;
+    top: 53vh;
     left: 60%;
     width: clamp(120px, 14vw, 240px);
     ;
@@ -1027,6 +1048,9 @@ img {
     --small-font-size: .875rem;
   }
 
+  .logo-drop {
+    transform: translateY(-1.5rem);
+  }
 
   .container {
     margin-inline: auto;
@@ -1034,6 +1058,11 @@ img {
 
   .picture-container {
     margin-inline: auto;
+  }
+
+  .portfolio-content {
+    --card-w: 400px;
+    --card-gap: 40px;
   }
 
   .section {
@@ -1095,7 +1124,7 @@ img {
   }
 
   .me-img {
-    top: 56vh;
+    top: 54vh;
     left: 60%;
     width: clamp(120px, 14vw, 360px);
     ;
