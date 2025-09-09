@@ -359,7 +359,8 @@ img {
 
 /*=============== HOME ===============*/
 .home,
-.about, .contact {
+.about,
+.contact {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
@@ -577,7 +578,6 @@ img {
 /*Pictures*/
 .picture-gallery {
   align-items: center;
-  padding-top: 3rem;
   padding-bottom: 2rem;
   justify-content: center;
 }
@@ -598,12 +598,6 @@ img {
   object-fit: cover;
   border-radius: 0rem;
   display: block;
-}
-
-.picture-container img {
-  border-radius: 1rem;
-  justify-self: center;
-  width: 360px;
 }
 
 .picture-title {
@@ -1043,7 +1037,7 @@ img {
   }
 
   .section {
-    padding-block: 5rem 7rem;
+    padding-block: 5rem 5rem;
   }
 
   .section-title {
