@@ -811,18 +811,16 @@ img {
 }
 
 /*=============== WORK ===============*/
+
 .work {
   position: relative;
+  padding-block: 4rem 6rem;
+  background: linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, 0));
+  background-image: linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, .6), rgba(19, 20, 13, 0)), var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 50vh;
-  overflow: hidden;
-
-  background-image:
-    linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, 0)),
-    url("../img/Background.png");
-
-  background-size: 100% 50%, cover;
-  background-position: bottom center, center;
-  background-repeat: no-repeat, no-repeat;
 }
 
 .work-title {
@@ -841,9 +839,42 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 3rem;
+  gap: 2rem;
+  padding-top: 3rem;
 }
 
+.section-subtitle {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contribution-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.tools {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tool-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tool-icons img {
+  height: 100px;
+}
 
 
 /*=============== SCROLL BAR ===============*/
