@@ -6,39 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon" />
 
   <!--=============== REMIXICONS ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
 
   <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <title>Forgach Rebeka - Portfolio</title>
 </head>
 
 <body>
-  <!--==================== CURSOR ====================-->
-
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="portfolio.html" class="nav-logo">
+      <a href="/portfolio.html" class="nav-logo">
         <span class="logo-drop">
-          <img src="assets/img/logo.png" />
+          <img src="/assets/img/logo.png" alt="Logo" />
         </span>
       </a>
 
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link active-link">Portfolio</a>
+            <a href="/portfolio.html" class="nav-link active-link">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="./about.html" class="nav-link">About</a>
+            <a href="/about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="/contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
 
@@ -59,8 +57,8 @@
   <main class="main" id="top">
     <!--==================== HOME ====================-->
     <section class="home section">
-      <img src="assets/img/portfolio/title.png" alt="Title" class="home-img" />
-      <img src="assets/img/portfolio/default-me.png" data-hover="assets/img/portfolio/hover-me.png" alt="Character"
+      <img src="/assets/img/portfolio/title.png" alt="Title" class="home-img" />
+      <img src="/assets/img/portfolio/default-me.png" data-hover="/assets/img/portfolio/hover-me.png" alt="Character"
         class="me-img" />
     </section>
 
@@ -70,69 +68,36 @@
         <!--filters-->
         <div class="portfolio-filters container">
           <a data-name="all" class="slide-btn active">
-            <img src="/assets/img/portfolio/all-icon.png" />
+            <img src="/assets/img/portfolio/all-icon.png" alt="All" />
             <span>All</span>
           </a>
           <a data-name="games" class="slide-btn">
-            <img src="/assets/img/portfolio/games-icon.png" />
+            <img src="/assets/img/portfolio/games-icon.png" alt="Games" />
             <span>Games</span>
           </a>
           <a data-name="3d" class="slide-btn">
-            <img src="/assets/img/portfolio/3d-icon.png" />
+            <img src="/assets/img/portfolio/3d-icon.png" alt="3D" />
             <span>3D</span>
           </a>
           <a data-name="2d" class="slide-btn">
-            <img src="/assets/img/portfolio/2d-icon.png" />
+            <img src="/assets/img/portfolio/2d-icon.png" alt="2D" />
             <span>2D</span>
           </a>
         </div>
 
         <!--work cards-->
-
-        <div class="portfolio-content">
-          <div class="filterable-cards picture-container grid">
-            <a href="./assets/work/EtherLocked.html" class="card" data-name="games">
-              <img src="assets/img/portfolio/etherlocked.png">
-              <div class="card-body">
-                <h3 class="card-title">EtherLocked</h3>
-              </div>
-            </a>
-            <div class="card" data-name="2d">
-              <img src="assets/img/about/pic-1.JPG">
-              <div class="card-body">
-                <h3 class="card-title">Game Art</h3>
-              </div>
-            </div>
-            <div class="card" data-name="3d">
-              <img src="assets/img/about/pic-1.JPG">
-              <div class="card-body">
-                <h3 class="card-title">Game Art</h3>
-              </div>
-            </div>
-            <div class="card" data-name="games">
-              <img src="assets/img/about/pic-1.JPG">
-              <div class="card-body">
-                <h3 class="card-title">Game Art</h3>
-              </div>
-            </div>
-            <div class="card" data-name="2d">
-              <img src="assets/img/about/pic-1.JPG">
-              <div class="card-body">
-                <h3 class="card-title">Game Art</h3>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="filterable-cards picture-container grid" id="portfolio-cards"></div>
+      </div>
+      </div>
     </section>
   </main>
 
-
   <!--==================== FOOTER ====================-->
-  <footer class="footer" style="--ft-image: url('../img/Background.png')">
+  <footer class="footer" style="--ft-image: url('/assets/img/Background.png')">
     <div class="footer-container container">
-      <a href="contact.html" class="pop-btn">
+      <a href="/contact.html" class="pop-btn">
         <span class="pop-icon pop-icon--footer">
-          <img src="/assets/img/reach-icon.png" />
+          <img src="/assets/img/reach-icon.png" alt="Reach out" />
         </span>
         <span class="pop-label">Reach out!</span>
       </a>
@@ -142,10 +107,8 @@
           <div class="footer-social">
             <a href="https://www.instagram.com/rebibab_the_great/" class="footer-social-link icon-instagram"
               aria-label="Instagram"></a>
-
             <a href="https://www.facebook.com/FRWombat" class="footer-social-link icon-facebook"
               aria-label="Facebook"></a>
-
             <a href="https://www.linkedin.com/in/rebeka-forgach/" class="footer-social-link icon-linkedin"
               aria-label="Linkedin"></a>
           </div>
@@ -164,8 +127,8 @@
   </a>
 
   <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
-
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cards.js"></script>
 </body>
 
 </html>

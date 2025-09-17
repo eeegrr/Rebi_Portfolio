@@ -1,0 +1,16 @@
+[
+    {
+        "category": "games",
+        "slug": "etherlocked",
+        "imageSrc": "/assets/img/portfolio/etherlocked.png",
+        "alt": "EtherLocked",
+        "title": "EtherLocked"
+    },
+    {
+        "category": "games",
+        "slug": "suburbs",
+        "imageSrc": "/assets/img/portfolio/suburbs.png",
+        "alt": "Suburbs",
+        "title": "Suburbs"
+    }
+]
