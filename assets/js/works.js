@@ -154,6 +154,8 @@ function populatePage(d) {
         else longEl.textContent = d.longDescription || '';
     }
 
+    
+
     // Contributions
     const contribList = document.querySelector('.contribution-list');
     if (contribList) {

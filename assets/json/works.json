@@ -24,13 +24,24 @@
                 "Screenshot 3"
             ],
             "longDescription": "EtherLocked is a first-person puzzle game that I developed together with two classmates over the course of a year as a school project. Working in a small team of three gave us the chance to explore every stage of development closely, from concept to final build, while each of us took on multiple roles.",
+            "longDescriptionHighlights": [
+                "first-person puzzle game",
+                "with two classmates",
+                "year",
+                "school project",
+                "every stage of development",
+                "concept to final build",
+                "multiple roles"
+            ],
             "contributions": [
                 "User Interface Design",
-                "User Experience Design",
+                "Level Design",
                 "3D Models & Textures",
                 "Modular Environment Kit",
                 "Outdoor Scenery (Billboarding)",
-                "Main Menu (UI, UX, Programming)"
+                "Main Menu (UI, UX, Programming)",
+                "Environment Art",
+                "Concept art"
             ],
             "gallerySecondary": [
                 "/assets/img/EtherLocked/EtherLocked-bg.png",
@@ -42,27 +53,27 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/EtherLocked/unity.png",
+                    "src": "/assets/img/tools/unity.png",
                     "alt": "Unity"
                 },
                 {
-                    "src": "/assets/img/EtherLocked/substance.png",
+                    "src": "/assets/img/tools/substance.png",
                     "alt": "Substance Painter"
                 },
                 {
-                    "src": "/assets/img/EtherLocked/zbrush.png",
+                    "src": "/assets/img/tools/zbrush.png",
                     "alt": "ZBrush"
                 },
                 {
-                    "src": "/assets/img/EtherLocked/illustrator.png",
+                    "src": "/assets/img/tools/illustrator.png",
                     "alt": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/EtherLocked/blender.png",
+                    "src": "/assets/img/tools/blender.png",
                     "alt": "Blender"
                 },
                 {
-                    "src": "/assets/img/EtherLocked/procreate.png",
+                    "src": "/assets/img/tools/procreate.png",
                     "alt": "Procreate"
                 }
             ],
@@ -99,6 +110,16 @@
                 "Suburbs screenshot 3"
             ],
             "longDescription": "Suburbs is a top-down shoot 'em up video game that I developed alone over the course of a half a year as a school project. Working independently gave me the opportunity to experience and overcome every development stage, error and to learn the fundamentals of game design first-hand.",
+            "longDescriptionHighlights": [
+                "top-down shoot 'em up",
+                "alone",
+                "half a year",
+                "school project",
+                "independently",
+                "development",
+                "error",
+                "fundamentals"
+            ],
             "contributions": [
                 "Level Design",
                 "Environment Art",
@@ -115,12 +136,16 @@
             ],
             "tools": [
                 {
-                    "src": "../Suburbs/unity.png",
-                    "alt": "Unity"
+                    "src": "/assets/img/tools/construct3.png",
+                    "alt": "Construct 3"
                 },
                 {
-                    "src": "../Suburbs/blender.png",
-                    "alt": "Blender"
+                    "src": "/assets/img/tools/illustrator.png",
+                    "alt": "Illustrator"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "alt": "Procreate"
                 }
             ],
             "social": {},
