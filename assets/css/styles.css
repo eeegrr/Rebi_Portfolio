@@ -861,15 +861,15 @@ img {
 }
 
 .icon-facebook {
-  --icon: url("/assets/img/facebook-icon.svg");
+  --icon: url("assets/img/facebook-icon.svg");
 }
 
 .icon-instagram {
-  --icon: url("/assets/img/instagram-icon.svg");
+  --icon: url("assets/img/instagram-icon.svg");
 }
 
 .icon-linkedin {
-  --icon: url("/assets/img/linkedin-icon.svg");
+  --icon: url("assets/img/linkedin-icon.svg");
 }
 
 .footer-social .footer-social-link {
