@@ -5,7 +5,7 @@
             "title": "EtherLocked",
             "playLink": "#",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/EtherLocked/EtherLocked-bg.png",
+            "bgImage": "../img/EtherLocked/EtherLocked-bg.png",
             "intro": "EtherLocked follows the story of a teenage boy who accidentally escapes his body one night. Before sunrise, the player must solve a series of puzzles to guide him back to his body.",
             "introHighlights": [
                 "teenage boy",
@@ -89,7 +89,7 @@
             "title": "Suburbs",
             "playLink": "#",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/Suburbs/Suburbs-bg-top.png",
+            "bgImage": "../img/Suburbs/Suburbs-bg-top.png",
             "intro": "Drive a tiny matchbox car down an infinite road, blasting through waves of giant enemies like rats and raccoons while avoiding cans that can destroy your vehicle.",
             "introHighlights": [
                 "matchbox",
