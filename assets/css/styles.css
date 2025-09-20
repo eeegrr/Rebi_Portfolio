@@ -993,6 +993,76 @@ img {
 }
 
 
+/* small-screen tweaks */
+@media (max-width: 820px) {
+
+  .work .side-control.top-left,
+  .work .side-control.top-right {
+    top: calc(50% - 8px);
+    /* tiny tweak on small devices */
+  }
+
+  .side-control .side-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .side-control .side-label {
+    font-size: 12px;
+  }
+}
+
+/* BOTTOM controls in footer (aligned with .pop-btn) */
+/* We place them inside .footer-container and align vertically center with its content */
+.footer-container {
+  position: relative;
+}
+
+/* container is positional context */
+.footer-container .footer-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  z-index: 30;
+  pointer-events: auto;
+}
+
+/* left & right placement relative to footer container */
+.footer-container .footer-controls.left {
+  left: 28px;
+}
+
+/* left control group */
+.footer-container .footer-controls.right {
+  right: 28px;
+}
+
+/* right control group */
+
+/* label color inside footer (light on dark footer) */
+.footer-container .footer-controls .side-label {
+  color: #ffffff;
+}
+
+/* responsive footer adjustments */
+@media (max-width: 760px) {
+  .footer-container .footer-controls {
+    gap: 20px;
+  }
+
+  .footer-container .footer-controls .side-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+}
+
+
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;

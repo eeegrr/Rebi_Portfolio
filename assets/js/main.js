@@ -140,6 +140,24 @@ function sendEmail() {
     );
 }
 
+/*=============== SWITCH WORK ===============*/
+document.addEventListener('DOMContentLoaded', () => {
+    const gallery = document.querySelector('.picture .picture-container.grid');
+    function scrollX(delta) {
+        if (!gallery) return;
+        gallery.scrollBy({ left: delta, behavior: 'smooth' });
+    }
+
+    const topLeft = document.querySelector('.side-control.top-left .side-btn');
+    const topRight = document.querySelector('.side-control.top-right .side-btn');
+    const botLeft = document.querySelector('.footer-controls.left .side-btn');
+    const botRight = document.querySelector('.footer-controls.right .side-btn');
+
+    [topLeft, botLeft].forEach(btn => btn && btn.addEventListener('click', (e) => { e.preventDefault(); scrollX(-320); }));
+    [topRight, botRight].forEach(btn => btn && btn.addEventListener('click', (e) => { e.preventDefault(); scrollX(320); }));
+});
+
+
 sr.reveal('.home-img, .new-data, .care-img, .contact-content , .footer')
 sr.reveal('.home-data, .care-list, .contact-img', { delay: 500 })
 sr.reveal('.new-card', { delay: 500, interval: 100 })
