@@ -1,6 +1,6 @@
 // works.js (updated)
 // CONFIG
-const DATA_PATH = '/assets/json/works.json'; // <- adjust if your file is at a different path
+const DATA_PATH = 'assets/json/index.json'; // <- adjust if your file is at a different path
 const USE_INLINE_FALLBACK = false; // set true and paste INLINE_DATA below if fetch blocked
 const INLINE_DATA = {
     /* paste projects.json object here for local testing if necessary */

@@ -2,21 +2,21 @@
     {
         "category": "games",
         "slug": "etherlocked",
-        "imageSrc": "/assets/img/portfolio/etherlocked.png",
+        "imageSrc": "assets/img/portfolio/etherlocked.png",
         "alt": "EtherLocked",
         "title": "EtherLocked"
     },
     {
         "category": "games",
         "slug": "suburbs",
-        "imageSrc": "/assets/img/portfolio/suburbs.png",
+        "imageSrc": "assets/img/portfolio/suburbs.png",
         "alt": "Suburbs",
         "title": "Suburbs"
     },
-        {
+    {
         "category": "games",
         "slug": "cheese",
-        "imageSrc": "/assets/img/CourtCheester/courtcheester-bg.png",
+        "imageSrc": "assets/img/CourtCheester/courtcheester-bg.png",
         "alt": "Cheese",
         "title": "Court Cheester"
     }

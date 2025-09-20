@@ -4,8 +4,8 @@
             "slug": "etherlocked",
             "title": "EtherLocked",
             "playLink": "#",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/EtherLocked/EtherLocked-bg.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/EtherLocked/EtherLocked-bg.png",
             "intro": "EtherLocked follows the story of a teenage boy who accidentally escapes his body one night. Before sunrise, the player must solve a series of puzzles to guide him back to his body.",
             "introHighlights": [
                 "teenage boy",
@@ -14,9 +14,9 @@
                 "puzzles"
             ],
             "gallery": [
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png"
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png"
             ],
             "galleryAlts": [
                 "Screenshot 1",
@@ -44,36 +44,36 @@
                 "Concept art"
             ],
             "gallerySecondary": [
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png",
-                "/assets/img/EtherLocked/EtherLocked-bg.png"
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png",
+                "assets/img/EtherLocked/EtherLocked-bg.png"
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/unity.png",
+                    "src": "assets/img/tools/unity.png",
                     "alt": "Unity"
                 },
                 {
-                    "src": "/assets/img/tools/substance.png",
+                    "src": "assets/img/tools/substance.png",
                     "alt": "Substance Painter"
                 },
                 {
-                    "src": "/assets/img/tools/zbrush.png",
+                    "src": "assets/img/tools/zbrush.png",
                     "alt": "ZBrush"
                 },
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "alt": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/blender.png",
+                    "src": "assets/img/tools/blender.png",
                     "alt": "Blender"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "alt": "Procreate"
                 }
             ],
@@ -88,8 +88,8 @@
             "slug": "suburbs",
             "title": "Suburbs",
             "playLink": "#",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/Suburbs/Suburbs-bg-top.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/Suburbs/Suburbs-bg-top.png",
             "intro": "Drive a tiny matchbox car down an infinite road, blasting through waves of giant enemies like rats and raccoons while avoiding cans that can destroy your vehicle.",
             "introHighlights": [
                 "matchbox",
@@ -130,15 +130,15 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/construct3.png",
+                    "src": "assets/img/tools/construct3.png",
                     "alt": "Construct 3"
                 },
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "alt": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "alt": "Procreate"
                 }
             ],

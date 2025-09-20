@@ -1,4 +1,4 @@
-const CARDS_JSON_URL = '/assets/json/cards.json';
+const CARDS_JSON_URL = 'assets/json/cards.json';
 
 async function loadCards() {
     const res = await fetch(CARDS_JSON_URL, { cache: 'no-store' });
@@ -16,7 +16,7 @@ function createCard(item) {
     // build link to generic project page (work.html)
     // -> /work.html?project=etherlocked
     if (item.slug) {
-        card.href = `/work.html?project=${encodeURIComponent(item.slug)}`;
+        card.href = `/index.html?project=${encodeURIComponent(item.slug)}`;
     } else if (item.href) {
         // fallback to direct file link if slug missing
         card.href = item.href;
