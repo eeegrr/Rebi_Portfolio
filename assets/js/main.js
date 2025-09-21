@@ -99,17 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*=============== PRELOADER ===============*/
 var loader = document.getElementById("preloader");
-var minDisplayTime = 2000;
+var minDisplayTime = 3000; // 3 seconds
 var startTime = Date.now();
 
-window.addEventListener("load", function () {
-    var elapsedTime = Date.now() - startTime;
-    var remainingTime = minDisplayTime - elapsedTime;
+if (!sessionStorage.getItem("preloaderShown")) {
+    window.addEventListener("load", function () {
+        var elapsedTime = Date.now() - startTime;
+        var remainingTime = minDisplayTime - elapsedTime;
 
-    setTimeout(function () {
-        loader.style.display = "none";
-    }, remainingTime > 0 ? remainingTime : 0);
-});
+        setTimeout(function () {
+            loader.style.display = "none";
+            sessionStorage.setItem("preloaderShown", "true");
+        }, remainingTime > 0 ? remainingTime : 0);
+    });
+} else {
+    loader.style.display = "none";
+}
 
 /*=============== SEND MESSAGE ===============*/
 (function () {
