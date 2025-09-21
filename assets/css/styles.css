@@ -617,34 +617,6 @@ img {
 
 /*=============== CONTACT ===============*/
 
-/* Page lock for contact page (add .page-contact to <body> on contact.html) */
-body.page-contact {
-  height: 100vh;
-  overflow: hidden;
-  touch-action: none;
-  -webkit-overflow-scrolling: auto;
-}
-
-/* Keep contact section full-height but allow internal scrolling inside container/form */
-body.page-contact .contact {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-body.page-contact .contact-container {
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 2rem;
-}
-
-body.page-contact .contact-form {
-  max-height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 /* Layout / container */
 .contact-container {
   padding-top: 2rem;
@@ -1134,6 +1106,17 @@ body.page-contact .contact-form {
 .show-scroll {
   bottom: 3rem;
 }
+
+/*=============== PRELOADER ===============*/
+#preloader {
+  background: var(--body-color) url("../img/preloader.gif") no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-size: 10%;
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

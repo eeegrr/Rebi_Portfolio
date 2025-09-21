@@ -97,11 +97,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/*=============== PRELOADER ===============*/
+var loader = document.getElementById("preloader");
+var minDisplayTime = 2000;
+var startTime = Date.now();
+
+window.addEventListener("load", function () {
+    var elapsedTime = Date.now() - startTime;
+    var remainingTime = minDisplayTime - elapsedTime;
+
+    setTimeout(function () {
+        loader.style.display = "none";
+    }, remainingTime > 0 ? remainingTime : 0);
+});
+
 /*=============== SEND MESSAGE ===============*/
-/* contact.js
-   Full JS for validation + AJAX submit to FormSubmit + success overlay
-   Drop this into your page (after the form HTML).
-*/
 (function () {
     'use strict';
 
