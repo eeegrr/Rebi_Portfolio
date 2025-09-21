@@ -17,7 +17,7 @@
     <title>Forgach Rebeka - Portfolio</title>
 </head>
 
-<body>
+<body class="page-contact">
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -55,52 +55,53 @@
     </header>
 
     <!--==================== MAIN ====================-->
-    <main class="main" id="top">
-
+    <main class="main">
         <!--==================== CONTACT ====================-->
         <section class="contact section">
             <div class="contact-top">
-                <h2 class="section-title">
-                    <span>REACH OUT!</span>
-                </h2>
-                <p class="contact-description">
-                    Let’s make something together
-                </p>
+                <h2 class="section-title"><span>REACH OUT!</span></h2>
+                <p class="contact-description">Let’s make something together</p>
             </div>
 
-
             <div class="contact-container container">
-                <form action="" class="contact-form">
+                <form action="https://formsubmit.co/60bcd629e01cad68d995683286239ce7" method="POST" class="contact-form"
+                    novalidate>
                     <!-- Name -->
-                    <div class="field">
-                        <input class="form-input" type="text" id="name" name="name" placeholder=" " autocomplete="off">
-                        <label for="name">Name</label>
-                        <div class="error-txt">Name can't be blank</div>
+                    <div class="field" id="field-name">
+                        <input class="form-input" type="text" id="name" name="name" placeholder="Name"
+                            autocomplete="off" />
+                        <div class="error-txt" aria-live="polite">Name can't be blank</div>
                     </div>
 
                     <!-- Email -->
-                    <div class="field">
-                        <input class="form-input" type="email" id="email" name="email" placeholder=" "
-                            autocomplete="off">
-                        <label for="email">Email address</label>
-                        <div class="error-txt">Email address can't be blank</div>
+                    <div class="field" id="field-email">
+                        <input class="form-input" type="email" id="email" name="email" placeholder="Email"
+                            autocomplete="off" />
+                        <div class="error-txt email" aria-live="polite">Email address can't be blank</div>
                     </div>
 
                     <!-- Message -->
-                    <div class="field field--textarea">
-                        <textarea class="form-input" id="message" name="message" rows="6" placeholder=" "
+                    <div class="field field--textarea" id="field-message">
+                        <textarea class="form-input" id="message" name="message" rows="6" placeholder="Message"
                             autocomplete="off"></textarea>
-                        <label for="message">Message</label>
-                        <div class="error-txt">Message can't be blank</div>
+                        <div class="error-txt" aria-live="polite">Message can't be blank</div>
                     </div>
+
                     <!-- Submit -->
                     <button type="submit" class="pop-btn">
                         <span class="pop-icon" aria-hidden="true">
-                            <img src="assets/img/contact/send-icon.png" />
+                            <img src="assets/img/contact/send-icon.png" alt="" />
                         </span>
                         <span class="pop-label">Send!</span>
                     </button>
                 </form>
+
+                <!-- Success panel -->
+                <div id="contact-success" class="contact-success" aria-hidden="true" style="display:none;">
+                    <h3>Thanks — message sent!</h3>
+                    <p>I'll get back to you as soon as possible</p>
+                    <button id="success-close" class="pop-btn">Close</button>
+                </div>
             </div>
         </section>
     </main>

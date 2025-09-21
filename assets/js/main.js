@@ -97,68 +97,255 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/*=============== TAGS ===============*/
-// one listener on the filters wrapper
-const filtersEl = document.querySelector('.portfolio-filters');
-const cards = document.querySelectorAll('.filterable-cards .card');
-
-filtersEl.addEventListener('click', (e) => {
-    // find the clicked <a class="games-badge"> even if <img>/<span> was clicked
-    const btn = e.target.closest('a.slide-btn');
-    if (!btn) return; // clicked outside a filter button
-    e.preventDefault();
-
-    // toggle active state
-    const prev = filtersEl.querySelector('.active');
-    if (prev) prev.classList.remove('active');
-    btn.classList.add('active');
-
-    // read filter name from data-name
-    const filter = (btn.dataset.name || 'all').toLowerCase();
-
-    // show/hide cards
-    cards.forEach(card => {
-        const name = (card.dataset.name || '').toLowerCase();
-        card.hidden = !(filter === 'all' || name === filter);
-    });
-});
-
 /*=============== SEND MESSAGE ===============*/
-const form = document.querySelector('form');
+/* contact.js
+   Full JS for validation + AJAX submit to FormSubmit + success overlay
+   Drop this into your page (after the form HTML).
+*/
+(function () {
+    'use strict';
 
-function sendEmail() {
-    Email.send({
-        Host: "s1.maildns.net",
-        Username: "username",
-        Password: "password",
-        To: 'them@website.com',
-        From: "you@isp.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-}
-
-/*=============== SWITCH WORK ===============*/
-document.addEventListener('DOMContentLoaded', () => {
-    const gallery = document.querySelector('.picture .picture-container.grid');
-    function scrollX(delta) {
-        if (!gallery) return;
-        gallery.scrollBy({ left: delta, behavior: 'smooth' });
+    // ---------- Query DOM ----------
+    const form = document.querySelector('.contact-form');
+    if (!form) {
+        console.warn('contact.js: .contact-form not found');
+        return;
     }
 
-    const topLeft = document.querySelector('.side-control.top-left .side-btn');
-    const topRight = document.querySelector('.side-control.top-right .side-btn');
-    const botLeft = document.querySelector('.footer-controls.left .side-btn');
-    const botRight = document.querySelector('.footer-controls.right .side-btn');
+    const fullName = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
 
-    [topLeft, botLeft].forEach(btn => btn && btn.addEventListener('click', (e) => { e.preventDefault(); scrollX(-320); }));
-    [topRight, botRight].forEach(btn => btn && btn.addEventListener('click', (e) => { e.preventDefault(); scrollX(320); }));
-});
+    // Success panel element (should exist in markup; if not, we create one)
+    let successPanel = document.getElementById('contact-success');
 
+    // If user didn't include a success panel, create a simple one (transparent overlay style)
+    if (!successPanel) {
+        successPanel = document.createElement('div');
+        successPanel.id = 'contact-success';
+        successPanel.setAttribute('aria-hidden', 'true');
+        successPanel.style.display = 'none';
+        // inner content will be wrapped into .success-card by the setup below
+        successPanel.innerHTML = `
+      <h3>Thanks — message sent!</h3>
+      <p>I'll get back to you as soon as possible.</p>
+      <button id="success-close" class="pop-btn" type="button">Close</button>
+    `;
+        document.body.appendChild(successPanel);
+    }
 
-sr.reveal('.home-img, .new-data, .care-img, .contact-content , .footer')
-sr.reveal('.home-data, .care-list, .contact-img', { delay: 500 })
-sr.reveal('.new-card', { delay: 500, interval: 100 })
-sr.reveal('.shop-card', { interval: 100 })
+    // ensure there is a close button and an inner success-card wrapper for styling
+    let successClose = successPanel.querySelector('#success-close') || null;
+    if (!successPanel.querySelector('.success-card')) {
+        const inner = document.createElement('div');
+        inner.className = 'success-card';
+        // move existing children into the inner card
+        while (successPanel.firstChild) inner.appendChild(successPanel.firstChild);
+        successPanel.appendChild(inner);
+    }
+    successClose = successPanel.querySelector('#success-close');
+
+    // ---------- Helpers: show/hide errors ----------
+    function showErrorFor(fieldEl, msg) {
+        if (!fieldEl) return;
+        const container = fieldEl.closest('.field');
+        if (!container) return;
+        const errorTxt = container.querySelector('.error-txt');
+        if (errorTxt) errorTxt.textContent = msg;
+        container.classList.add('error');
+        fieldEl.setAttribute('aria-invalid', 'true');
+    }
+
+    function hideErrorFor(fieldEl) {
+        if (!fieldEl) return;
+        const container = fieldEl.closest('.field');
+        if (!container) return;
+        container.classList.remove('error');
+        fieldEl.removeAttribute('aria-invalid');
+    }
+
+    function isValidEmail(v) {
+        // reasonable client-side check
+        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(v);
+    }
+
+    function validateField(fieldEl) {
+        const val = (fieldEl.value || '').trim();
+
+        if (fieldEl === email) {
+            if (val === '') {
+                showErrorFor(fieldEl, "Email address can't be blank");
+                return false;
+            }
+            if (!isValidEmail(val)) {
+                showErrorFor(fieldEl, 'Please enter a valid email address');
+                return false;
+            }
+            hideErrorFor(fieldEl);
+            return true;
+        }
+
+        // name & message
+        if (val === '') {
+            const defaultMsg = fieldEl.tagName.toLowerCase() === 'textarea'
+                ? "Message can't be blank"
+                : "Name can't be blank";
+            showErrorFor(fieldEl, defaultMsg);
+            return false;
+        }
+
+        hideErrorFor(fieldEl);
+        return true;
+    }
+
+    function validateAll() {
+        const a = validateField(fullName);
+        const b = validateField(email);
+        const c = validateField(message);
+        return a && b && c;
+    }
+
+    // ---------- Overlay show/hide (exported to window) ----------
+    function showContactSuccess() {
+        successPanel.classList.add('open');
+        successPanel.setAttribute('aria-hidden', 'false');
+        successPanel.style.display = 'flex';
+        const btn = successPanel.querySelector('#success-close');
+        if (btn) btn.focus();
+        document.documentElement.style.overflow = 'hidden';
+    }
+
+    function hideContactSuccess() {
+        successPanel.classList.remove('open');
+        successPanel.setAttribute('aria-hidden', 'true');
+        successPanel.style.display = 'none';
+        document.documentElement.style.overflow = '';
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) submitBtn.focus();
+    }
+
+    window.showContactSuccess = showContactSuccess;
+    window.hideContactSuccess = hideContactSuccess;
+
+    // close handlers
+    if (successClose) {
+        successClose.addEventListener('click', () => {
+            hideContactSuccess();
+            form.reset();
+        });
+    }
+
+    // click overlay outside card to close
+    successPanel.addEventListener('click', (evt) => {
+        const card = successPanel.querySelector('.success-card');
+        if (card && !card.contains(evt.target)) {
+            hideContactSuccess();
+        }
+    });
+
+    // ESC to close
+    document.addEventListener('keydown', (e) => {
+        if ((e.key === 'Escape' || e.key === 'Esc') && successPanel.classList.contains('open')) {
+            hideContactSuccess();
+        }
+    });
+
+    // ---------- Utility: derive FormSubmit AJAX endpoint ----------
+    function ajaxUrlFor(formEl) {
+        try {
+            const action = (formEl.getAttribute('action') || '').trim();
+            if (!action) return null;
+            if (action.includes('/ajax/')) return action;
+            const url = new URL(action);
+            return `${url.protocol}//${url.host}/ajax${url.pathname}`;
+        } catch (err) {
+            if (typeof formEl.action === 'string' && formEl.action.includes('/')) {
+                return formEl.action.replace('/submit', '/ajax/submit');
+            }
+            console.warn('contact.js: cannot compute ajaxUrlFor', err);
+            return null;
+        }
+    }
+
+    // ---------- Live validation listeners (attach once) ----------
+    [fullName, email, message].forEach((input) => {
+        if (!input) return;
+        input.addEventListener('input', () => validateField(input));
+        input.addEventListener('blur', () => validateField(input));
+    });
+
+    // ---------- Submit handler (AJAX to FormSubmit) ----------
+    let sending = false;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        if (sending) return;
+        const ok = validateAll();
+        if (!ok) {
+            const firstInvalid = form.querySelector('.field.error .form-input');
+            if (firstInvalid) firstInvalid.focus();
+            return;
+        }
+
+        const fd = new FormData(form);
+        const ajaxUrl = ajaxUrlFor(form);
+        if (!ajaxUrl) {
+            form.submit();
+            return;
+        }
+
+        sending = true;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.setAttribute('aria-disabled', 'true');
+        }
+
+        try {
+            const response = await fetch(ajaxUrl, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: fd,
+                credentials: 'omit'
+            });
+
+            if (response.ok) {
+                let json = null;
+                try { json = await response.json(); } catch (err) { json = null; }
+
+                if (response.status === 200 && (json === null || json.success === true || json.message)) {
+                    showContactSuccess();
+                    form.reset();
+                } else {
+                    console.warn('contact.js: unexpected FormSubmit response', json);
+                    const card = successPanel.querySelector('.success-card');
+                    if (card) {
+                        card.querySelector('h3').textContent = 'Thanks — but there was a hiccup';
+                        card.querySelector('p').textContent = 'Your message was received by FormSubmit but the server returned a non-standard response. If you don’t get an email, please try again later.';
+                    }
+                    showContactSuccess();
+                }
+            } else {
+                console.warn('contact.js: network response not ok', response.status);
+                alert('Sending failed. Please try again later or email directly.');
+            }
+        } catch (err) {
+            console.error('contact.js: submit error', err);
+            alert('Network error when sending message. Please try again later.');
+        } finally {
+            sending = false;
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.removeAttribute('aria-disabled');
+            }
+        }
+    });
+
+    window._contactDebug = {
+        show: showContactSuccess,
+        hide: hideContactSuccess
+    };
+})();
