@@ -22,6 +22,12 @@ function createCard(item) {
         card.href = '#';
     }
 
+    // optional: open external links in a new tab
+    if (item.href && item.href.startsWith('http')) {
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+    }
+
     const img = document.createElement('img');
     img.src = item.imageSrc;
     img.alt = item.alt || item.title || '';
@@ -40,7 +46,6 @@ function createCard(item) {
 
     return card;
 }
-
 
 function renderCards(items, category = 'all') {
     const container = document.getElementById('portfolio-cards');
