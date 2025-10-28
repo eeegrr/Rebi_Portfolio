@@ -396,7 +396,7 @@ img {
 }
 
 .me-img {
-  z-index: 999;
+  z-index: 2;
   width: clamp(120px, 30vw, 600px);
   left: 70%;
   top: 52vh;
