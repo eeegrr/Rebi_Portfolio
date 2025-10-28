@@ -222,6 +222,9 @@ img {
   transform: scale(1.55);
 }
 
+
+
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -393,12 +396,19 @@ img {
 }
 
 .me-img {
-  z-index: 2;
+  z-index: 999;
   width: clamp(120px, 30vw, 600px);
   left: 70%;
   top: 52vh;
   transform: translate(-50%, -50%);
   pointer-events: auto !important;
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer;
+  content: url("../img/portfolio/default-me.png");
+}
+
+.me-img:hover,
+.me-img:focus {
+  content: url("../img/portfolio/hover-me.png");
 }
 
 /*=============== MAIN ===============*/
@@ -593,7 +603,6 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
-  padding-top: 2rem;
   max-width: 1360px;
   margin-inline: 1.5rem;
 }
@@ -920,23 +929,70 @@ img {
   color: var(--first-color);
 }
 
-.work-description,
-.work-description2 {
-  font-size: var(--h2-font-size);
+.work-description {
+  font-size: var(--h3-font-size);
   text-align: center;
   color: var(--white-color);
   font-weight: var(--font-italice);
+  margin-bottom: 3rem;
 }
 
-.work-description span,
-.work-description2 span {
+.work-description span {
   font-weight: var(--font-bold);
 }
 
-.work-description2 {
-  margin-top: 4rem;
+.work-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
+/* === Each Column (Type / Role / Team) === */
+.work-detail {
+  flex: 1;
+}
+
+.work-detail:nth-child(2) {
+  flex: 3;
+}
+
+/* === Labels === */
+.work-detail-label {
+  display: block;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+/* === Info Text === */
+.work-detail-info {
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+  text-align: left;
+}
+
+/* === Lists === */
+.contribution-list,
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+  text-align: left;
+}
+
+/* Two-column list inside Role section */
+.contribution-list {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.contribution-list li {
+  break-inside: avoid;
+}
 
 .intro {
   display: flex;
@@ -948,7 +1004,6 @@ img {
 }
 
 .picture,
-.contributions,
 .tools {
   padding-bottom: 3rem;
 }
@@ -960,23 +1015,6 @@ img {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-
-
-.contribution-list {
-  font-size: var(--h2-font-size);
-  color: var(--white-color);
-  font-weight: var(--font-italice);
-  display: block;
-  columns: 1;
-  column-gap: 2rem;
-  text-align: center;
-  max-width: 820px;
-  margin-inline: auto;
-}
-
-.contribution-list li {
-  break-inside: avoid;
 }
 
 
@@ -1106,17 +1144,6 @@ img {
 .show-scroll {
   bottom: 3rem;
 }
-
-/*=============== PRELOADER ===============*/
-#preloader {
-  background: var(--body-color) url("../img/preloader.gif") no-repeat center center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  background-size: 10%;
-}
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -1285,11 +1312,6 @@ img {
   .footer-container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
-  }
-
-  .contribution-list {
-    columns: 2;
-    text-align: left;
   }
 
   .work-title {
@@ -1479,7 +1501,6 @@ img {
   .picture-container {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1.75rem;
-    padding-top: 4rem;
   }
 
   .contact-container {
@@ -1516,12 +1537,80 @@ img {
     right: 3rem;
   }
 
-  .contribution-list {
-    columns: 2;
-    text-align: left;
-  }
-
   .work-title {
     height: 80px;
   }
+}
+
+/*=============== CURSOR ===============*/
+html,
+body {
+  cursor: url("../img/cursor/default-cursor.svg") 8 8, auto;
+}
+
+/* ---- Interactive: links & buttons ---- */
+a,
+button,
+[role="button"],
+label,
+input[type="submit"],
+input[type="button"] {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer;
+}
+
+/* If you only want the hover image when actually hovered */
+a:hover,
+button:hover,
+[role="button"]:hover,
+label:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer;
+}
+
+/* ---- Active / mouse down (element-level) ---- */
+a:active,
+button:active,
+[role="button"]:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer;
+}
+
+/* ---- Text inputs & editable areas ---- */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+[contenteditable="true"] {
+  cursor: url("../img/cursor/type-cursor.svg") 8 12, text;
+}
+
+/* Optional: “disabled / not allowed” (5th case example) */
+[disabled],
+.is-disabled,
+.cursor-not-allowed {
+  cursor: not-allowed;
+  /* replace with your 5th PNG if you have it */
+  /* e.g., cursor: url("/cursor/not-allowed-cursor.png") 8 8, not-allowed; */
+}
+
+/* ---- Global "clicking" state (set via JS on mousedown) ---- */
+.is-clicking,
+.is-clicking * {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer !important;
+}
+
+/* Base hover cursor for all cards */
+.filterable-cards .card,
+.filterable-cards .card * {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer !important;
+}
+
+/* Click (active) cursor when pressed */
+.filterable-cards .card:active,
+.is-clicking .filterable-cards .card,
+.is-clicking .filterable-cards .card * {
+  cursor: url("../img/cursor/hover-cursor.svg") 8 8, pointer !important;
 }

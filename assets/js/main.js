@@ -63,58 +63,27 @@ const scrollActive = () => {
 
 window.addEventListener('scroll', scrollActive)
 
-
-/*=============== CHARACTER IMAGE ANIMATION ===============*/
-document.addEventListener('DOMContentLoaded', () => {
-    const imgs = document.querySelectorAll('.me-img');
-
-    imgs.forEach(img => {
-        const defaultSrc = img.getAttribute('src');
-        const hoverSrc = img.getAttribute('data-hover');
-        if (!hoverSrc) return;
-
-        // Preload the hover image to avoid flicker & catch missing path
-        const pre = new Image();
-        pre.src = hoverSrc;
-        pre.onerror = () => console.warn('Hover image not found:', hoverSrc);
-
-        // Helpful: log if the default path is wrong too
-        img.addEventListener('error', () => {
-            console.warn('Image failed to load:', img.src);
+    /*=============== cursor ===============*/
+    (function () {
+        var down = false;
+        window.addEventListener('mousedown', function () {
+            if (!down) {
+                down = true;
+                document.body.classList.add('is-clicking');
+            }
         });
-
-        const toHover = () => (img.src = hoverSrc);
-        const toDefault = () => (img.src = defaultSrc);
-
-        // Works for mouse & pen
-        img.addEventListener('pointerenter', toHover);
-        img.addEventListener('pointerleave', toDefault);
-
-        // Keyboard accessibility (tab focus)
-        img.tabIndex = 0;
-        img.addEventListener('focus', toHover);
-        img.addEventListener('blur', toDefault);
-    });
-});
-
-/*=============== PRELOADER ===============*/
-var loader = document.getElementById("preloader");
-var minDisplayTime = 3000; // 3 seconds
-var startTime = Date.now();
-
-if (!sessionStorage.getItem("preloaderShown")) {
-    window.addEventListener("load", function () {
-        var elapsedTime = Date.now() - startTime;
-        var remainingTime = minDisplayTime - elapsedTime;
-
-        setTimeout(function () {
-            loader.style.display = "none";
-            sessionStorage.setItem("preloaderShown", "true");
-        }, remainingTime > 0 ? remainingTime : 0);
-    });
-} else {
-    loader.style.display = "none";
-}
+        window.addEventListener('mouseup', function () {
+            if (down) {
+                down = false;
+                document.body.classList.remove('is-clicking');
+            }
+        });
+        // If mouse leaves window while pressed, clean up on re-entry
+        window.addEventListener('blur', function () {
+            down = false;
+            document.body.classList.remove('is-clicking');
+        });
+    })();
 
 /*=============== SEND MESSAGE ===============*/
 (function () {
