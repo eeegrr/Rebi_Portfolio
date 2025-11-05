@@ -609,8 +609,7 @@ img {
 
 .picture-container .picture-img {
   width: 100%;
-  height: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
   border-radius: 0rem;
   display: block;
@@ -943,37 +942,35 @@ img {
 
 .work-details {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 3rem;
 }
 
-/* === Each Column (Type / Role / Team) === */
 .work-detail {
-  flex: 1;
+  flex: 0 1 auto;
+  min-width: max-content;
 }
 
-.work-detail:nth-child(2) {
-  flex: 3;
-}
-
-/* === Labels === */
+/* Labels */
 .work-detail-label {
   display: block;
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.75rem;
   text-align: left;
+  white-space: nowrap;
 }
 
-/* === Info Text === */
+/* Info and lists */
 .work-detail-info {
   color: var(--white-color);
   font-size: var(--normal-font-size);
   text-align: left;
+  white-space: nowrap;
 }
 
-/* === Lists === */
 .contribution-list,
 .team-list {
   list-style: none;
@@ -984,7 +981,7 @@ img {
   text-align: left;
 }
 
-/* Two-column list inside Role section */
+/* Two-column layout inside Role section */
 .contribution-list {
   columns: 2;
   column-gap: 2.5rem;
@@ -994,12 +991,12 @@ img {
   break-inside: avoid;
 }
 
+
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2rem;
   padding-top: 3rem;
 }
 
@@ -1015,6 +1012,22 @@ img {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool img {
+  height: 64px;
+}
+
+.tool span {
+  margin-top: 0.5rem;
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
 }
 
 
@@ -1033,6 +1046,13 @@ img {
 
 .tool-icons img {
   height: 64px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 3px solid var(--first-color);
+  width: 80%;
+  margin: 3rem auto;
 }
 
 

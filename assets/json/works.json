@@ -4,146 +4,207 @@
             "slug": "etherlocked",
             "title": "EtherLocked",
             "playLink": "#",
-            "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "../img/EtherLocked/EtherLocked-bg.png",
-            "intro": "EtherLocked follows the story of a teenage boy who accidentally escapes his body one night. Before sunrise, the player must solve a series of puzzles to guide him back to his body.",
-            "introHighlights": [
-                "teenage boy",
-                "escapes his body",
-                "Before sunrise",
-                "puzzles"
-            ],
-            "gallery": [
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png"
-            ],
-            "galleryAlts": [
-                "Screenshot 1",
-                "Screenshot 2",
-                "Screenshot 3"
-            ],
-            "longDescription": "EtherLocked is a first-person puzzle game that I developed together with two classmates over the course of a year as a school project. Working in a small team of three gave us the chance to explore every stage of development closely, from concept to final build, while each of us took on multiple roles.",
-            "longDescriptionHighlights": [
-                "first-person puzzle game",
-                "with two classmates",
-                "year",
-                "school project",
-                "every stage of development",
-                "concept to final build",
-                "multiple roles"
-            ],
+            "playIcon": "/assets/img/about/download-icon.png",
+            "bgImage": "/assets/img/EtherLocked/EtherLocked-bg.png",
+            "type": "School project",
+            "years": "2024–2025",
             "contributions": [
-                "User Interface Design",
+                "Environment art",
+                "3D models",
                 "Level Design",
-                "3D Models & Textures",
+                "In-game UI",
+                "Billboarding",
+                "Main Menu UI & UX",
                 "Modular Environment Kit",
-                "Outdoor Scenery (Billboarding)",
-                "Main Menu (UI, UX, Programming)",
-                "Environment Art",
-                "Concept art"
+                "Concept Art"
             ],
-            "gallerySecondary": [
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png",
-                "assets/img/EtherLocked/EtherLocked-bg.png"
+            "team": [
+                "Rebeka Forgách",
+                "Evelīna Graumane",
+                "Elīza Drāzniece"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "EtherLocked is a first-person puzzle game that I developed together with two classmates over the course of a year as a school project. Working in a small team of three gave us the chance to explore every stage of development closely, from concept to final build, while each of us took on multiple roles.",
+                    "introHighlights": [
+                        "first-person puzzle",
+                        "two classmates",
+                        "year",
+                        "school project",
+                        "every stage of development",
+                        "concept to final build",
+                        "multiple roles"
+                    ],
+                    "gallery": [
+                        "/assets/img/EtherLocked/EtherLocked-pic1.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic2.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "2D Art",
+                    "intro": "I did the 2D aspects of the game, shaping its visual identity and player experience. I designed the main menu and user interface, ensuring a clear and immersive flow for players. I made the level design and environment design, combining functionality with atmosphere to guide exploration. In addition, I created concept art to support the team’s vision, helping establish the game’s mood and aesthetic direction.",
+                    "introHighlights": [
+                        "2D aspects",
+                        "visual identity",
+                        "main menu",
+                        "user interface",
+                        "level design",
+                        "environment design",
+                        "concept art"
+                    ],
+                    "gallery": [
+                        "/assets/img/EtherLocked/EtherLocked-pic4.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic5.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic6.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic7.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic8.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic9.png"
+                    ],
+                    "galleryAlts": [
+                        "2D Art 1",
+                        "2D Art 2",
+                        "2D Art 3",
+                        "2D Art 4",
+                        "2D Art 5",
+                        "2D Art 6"
+                    ]
+                },
+                {
+                    "subtitle": "3D Art",
+                    "intro": "I contributed to the 3D aspects of the game, creating and implementing various objects used throughout the environment. I was responsible for modeling assets, assigning and adjusting pre-existing materials, and applying stickers and textures.  I imported and arranged the models in Unity.",
+                    "introHighlights": [
+                        "3D aspects",
+                        "creating",
+                        "implementing",
+                        "modeling assets",
+                        "assigning",
+                        "adjusting",
+                        "materials",
+                        "applying stickers",
+                        "textures",
+                        "imported",
+                        "arranged"
+                    ],
+                    "gallery": [
+                        "/assets/img/EtherLocked/EtherLocked-pic10.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic11.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic12.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic13.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic14.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic15.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic16.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic17.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic18.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic19.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic20.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic21.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic22.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic23.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic24.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic25.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic26.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic27.png"
+                    ],
+                    "galleryAlts": [
+                        "3D Art 1",
+                        "3D Art 2",
+                        "3D Art 3",
+                        "3D Art 4",
+                        "3D Art 5",
+                        "3D Art 6",
+                        "3D Art 7",
+                        "3D Art 8",
+                        "3D Art 9",
+                        "3D Art 10",
+                        "3D Art 11",
+                        "3D Art 12",
+                        "3D Art 13",
+                        "3D Art 14",
+                        "3D Art 15",
+                        "3D Art 16",
+                        "3D Art 17",
+                        "3D Art 18"
+                    ]
+                },
+                {
+                    "subtitle": "Gallery",
+                    "intro": "More in-game pictures, sketches, out-of-bounds pictures, layouts etc.",
+                    "gallery": [
+                        "/assets/img/EtherLocked/EtherLocked-pic10.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic11.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic12.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic13.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic14.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic15.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic16.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic17.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic18.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic19.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic20.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic21.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic22.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic23.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic24.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic25.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic26.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic27.png"
+                    ],
+                    "galleryAlts": [
+                        "3D Art 1",
+                        "3D Art 2",
+                        "3D Art 3",
+                        "3D Art 4",
+                        "3D Art 5",
+                        "3D Art 6",
+                        "3D Art 7",
+                        "3D Art 8",
+                        "3D Art 9",
+                        "3D Art 10",
+                        "3D Art 11",
+                        "3D Art 12",
+                        "3D Art 13",
+                        "3D Art 14",
+                        "3D Art 15",
+                        "3D Art 16",
+                        "3D Art 17",
+                        "3D Art 18"
+                    ]
+                }
             ],
             "tools": [
                 {
-                    "src": "assets/img/tools/unity.png",
-                    "alt": "Unity"
+                    "src": "/assets/img/tools/unity.png",
+                    "label": "Unity"
                 },
                 {
-                    "src": "assets/img/tools/substance.png",
-                    "alt": "Substance Painter"
+                    "src": "/assets/img/tools/substance.png",
+                    "label": "Substance Painter"
                 },
                 {
-                    "src": "assets/img/tools/zbrush.png",
-                    "alt": "ZBrush"
+                    "src": "/assets/img/tools/zbrush.png",
+                    "label": "ZBrush"
                 },
                 {
-                    "src": "assets/img/tools/illustrator.png",
-                    "alt": "Illustrator"
+                    "src": "/assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
                 },
                 {
-                    "src": "assets/img/tools/blender.png",
-                    "alt": "Blender"
+                    "src": "/assets/img/tools/blender.png",
+                    "label": "Blender"
                 },
                 {
-                    "src": "assets/img/tools/procreate.png",
-                    "alt": "Procreate"
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
                 }
             ],
-            "social": {
-                "instagram": "https://www.instagram.com/rebibab_the_great/",
-                "facebook": "https://www.facebook.com/FRWombat",
-                "linkedin": "https://www.linkedin.com/in/rebeka-forgach/"
-            },
-            "footerCopy": "© All Rights Reserved By Forgach Rebeka"
-        },
-        {
-            "slug": "suburbs",
-            "title": "Suburbs",
-            "playLink": "#",
-            "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "../img/Suburbs/Suburbs-bg-top.png",
-            "intro": "Drive a tiny matchbox car down an infinite road, blasting through waves of giant enemies like rats and raccoons while avoiding cans that can destroy your vehicle.",
-            "introHighlights": [
-                "matchbox",
-                "infinite road",
-                "giant",
-                "rats",
-                "raccoons",
-                "avoiding cans"
-            ],
-            "gallery": [
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-2.png",
-                "assets/img/Suburbs/pic-3.png"
-            ],
-            "galleryAlts": [
-                "Suburbs screenshot 1",
-                "Suburbs screenshot 2",
-                "Suburbs screenshot 3"
-            ],
-            "longDescription": "Suburbs is a top-down shoot 'em up video game that I developed alone over the course of a half a year as a school project. Working independently gave me the opportunity to experience and overcome every development stage, error and to learn the fundamentals of game design first-hand.",
-            "longDescriptionHighlights": [
-                "top-down shoot 'em up",
-                "alone",
-                "half a year",
-                "school project",
-                "independently",
-                "development",
-                "error",
-                "fundamentals"
-            ],
-            "gallerySecondary": [
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-1.png",
-                "assets/img/Suburbs/pic-1.png"
-            ],
-            "tools": [
-                {
-                    "src": "assets/img/tools/construct3.png",
-                    "alt": "Construct 3"
-                },
-                {
-                    "src": "assets/img/tools/illustrator.png",
-                    "alt": "Illustrator"
-                },
-                {
-                    "src": "assets/img/tools/procreate.png",
-                    "alt": "Procreate"
-                }
-            ],
-            "social": {},
-            "footerCopy": "© All Rights Reserved By Forgach Rebeka"
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
         }
     ]
 }
