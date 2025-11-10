@@ -19,7 +19,7 @@
                 "Concept Art"
             ],
             "team": [
-                "Rebeka Forgách",
+                "Me",
                 "Evelīna Graumane",
                 "Elīza Drāzniece"
             ],
@@ -78,7 +78,7 @@
                 },
                 {
                     "subtitle": "3D Art",
-                    "intro": "I contributed to the 3D aspects of the game, creating and implementing various objects used throughout the environment. I was responsible for modeling assets, assigning and adjusting pre-existing materials, and applying stickers and textures.  I imported and arranged the models in Unity.",
+                    "intro": "I contributed to the 3D aspects of the game, creating and implementing various objects used throughout the environment. I was responsible for modeling assets, assigning and adjusting pre-existing materials, and applying stickers and textures. I imported and arranged the models in Unity.",
                     "introHighlights": [
                         "3D aspects",
                         "creating",
@@ -137,44 +137,26 @@
                     "subtitle": "Gallery",
                     "intro": "More in-game pictures, sketches, out-of-bounds pictures, layouts etc.",
                     "gallery": [
-                        "/assets/img/EtherLocked/EtherLocked-pic10.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic11.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic12.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic13.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic14.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic15.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic16.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic17.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic18.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic19.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic20.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic21.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic22.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic23.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic24.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic25.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic26.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic27.png"
+                        "/assets/img/EtherLocked/EtherLocked-pic28.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic29.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic30.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic31.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic32.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic33.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic34.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic35.png",
+                        "/assets/img/EtherLocked/EtherLocked-pic36.png"
                     ],
                     "galleryAlts": [
-                        "3D Art 1",
-                        "3D Art 2",
-                        "3D Art 3",
-                        "3D Art 4",
-                        "3D Art 5",
-                        "3D Art 6",
-                        "3D Art 7",
-                        "3D Art 8",
-                        "3D Art 9",
-                        "3D Art 10",
-                        "3D Art 11",
-                        "3D Art 12",
-                        "3D Art 13",
-                        "3D Art 14",
-                        "3D Art 15",
-                        "3D Art 16",
-                        "3D Art 17",
-                        "3D Art 18"
+                        "Gallery 1",
+                        "Gallery 2",
+                        "Gallery 3",
+                        "Gallery 4",
+                        "Gallery 5",
+                        "Gallery 6",
+                        "Gallery 7",
+                        "Gallery 8",
+                        "Gallery 9"
                     ]
                 }
             ],
@@ -204,6 +186,440 @@
                     "label": "Procreate"
                 }
             ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "suburbs",
+            "title": "Suburbs",
+            "playLink": "https://frwombat.itch.io/suburbs",
+            "playIcon": "/assets/img/about/download-icon.png",
+            "bgImage": "/assets/img/Suburbs/Suburbs-bg-top.png",
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "Drive a tiny matchbox car down an infinite road, blasting through waves of giant enemies like rats and raccoons while avoiding cans that can destroy your vehicle.",
+                    "introHighlights": [
+                        "matchbox",
+                        "infinite road",
+                        "giant",
+                        "rats and raccoons",
+                        "avoiding cans"
+                    ],
+                    "gallery": [
+                        "/assets/img/Suburbs/Suburbs-pic1.png",
+                        "/assets/img/Suburbs/Suburbs-pic2.png",
+                        "/assets/img/Suburbs/Suburbs-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "Development",
+                    "intro": "Suburbs is a top-down shoot 'em up video game that I developed alone over the course of a half a year as a school project. Working independently gave me the opportunity to experience and overcome every development stage, error and to learn the fundamentals of game design first-hand.",
+                    "introHighlights": [
+                        "top-down shoot 'em up ",
+                        "alone",
+                        "half a year",
+                        "school project",
+                        "independently",
+                        "development",
+                        "error",
+                        "fundamentals"
+                    ],
+                    "usePictureContainer4": true,
+                    "gallery": [
+                        "/assets/img/Suburbs/Suburbs-pic4.png",
+                        "/assets/img/Suburbs/Suburbs-pic5.png",
+                        "/assets/img/Suburbs/Suburbs-pic6.png",
+                        "/assets/img/Suburbs/Suburbs-pic7.png"
+                    ],
+                    "galleryAlts": [
+                        "Development 1",
+                        "Development 2",
+                        "Development 3",
+                        "Development 4"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "/assets/img/tools/construct3.png",
+                    "label": "Construct 3"
+                },
+                {
+                    "src": "/assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerBgImage": "/assets/img/Suburbs/Suburbs-bg-bottom.png",
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "cheese",
+            "title": "Court Cheester",
+            "playLink": "https://eeeggr.itch.io/court-cheester",
+            "playIcon": "/assets/img/about/download-icon.png",
+            "bgImage": "/assets/img/CourtCheester/courtcheester-bg.png",
+            "type": "Finnish Game Jam",
+            "years": "26th – 28th of January, 2024",
+            "contributions": [
+                "Environment design",
+                "Prop & enemy design",
+                "Outro comic art",
+                "In-game UI"
+            ],
+            "team": [
+                "Me",
+                "Evelīna Graumane",
+                "Elīza Drāzniece"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "Señor Prankster Pipsqueak, a brave little mouse, goes to the castle to prove that mice aren’t frightening but full of joy. His mission: make the king laugh and change how the world sees his kind.",
+                    "introHighlights": [
+                        "mouse",
+                        "prove",
+                        "aren’t frightening",
+                        "full of joy",
+                        "laugh"
+                    ],
+                    "gallery": [
+                        "/assets/img/CourtCheester/Cheese-pic1.png",
+                        "/assets/img/CourtCheester/Cheese-pic2.png",
+                        "/assets/img/CourtCheester/Cheese-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "Development",
+                    "intro": "Court Cheester is a arcade hopper game that I developed together with two classmates over the course of weekend as a game jam project. This was my first ever game project finished in a game jam. With only a few days, a tiny team, we  explored every stage of development to make a playable experience.",
+                    "introHighlights": [
+                        "arcade hopper",
+                        "with two classmates",
+                        "weekend",
+                        "game jam",
+                        "first ever",
+                        "finished",
+                        "few days",
+                        "every stage",
+                        "development",
+                        "playable"
+                    ],
+                    "gallery": [
+                        "/assets/img/CourtCheester/Cheese-pic4.png",
+                        "/assets/img/CourtCheester/Cheese-pic5.png",
+                        "/assets/img/CourtCheester/Cheese-pic6.png",
+                        "/assets/img/CourtCheester/Cheese-pic7.png",
+                        "/assets/img/CourtCheester/Cheese-pic8.png",
+                        "/assets/img/CourtCheester/Cheese-pic9.png"
+                    ],
+                    "galleryAlts": [
+                        "Development 1",
+                        "Development 2",
+                        "Development 3",
+                        "Development 4",
+                        "Development 5",
+                        "Development 6"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "/assets/img/tools/construct3.png",
+                    "label": "Construct 3"
+                },
+                {
+                    "src": "/assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
+                },
+                {
+                    "src": "/assets/img/tools/aseprite.png",
+                    "label": "Aseprite"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "cuise",
+            "title": "The Cuise",
+            "playLink": "https://malenarose.itch.io/the-cuise",
+            "playIcon": "/assets/img/about/download-icon.png",
+            "bgImage": "/assets/img/Cuise/Cuise-bg.png",
+            "type": "Spring Game Jam",
+            "years": "5th – 8th of April, 2024",
+            "contributions": [
+                "VFX art",
+                "Animation",
+                "Tileable background texture",
+                "In-game UI/UX"
+            ],
+            "team": [
+                "Me",
+                "Marta Lysaczenko",
+                "Jacob Roginski",
+                "Malena Rose"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "A deep-sea mission aboard a submarine turns into a desperate fight for survival when a monstrous, venomous creatures emerges from the darkness.",
+                    "introHighlights": [
+                        "deep-sea",
+                        "submarine",
+                        "survival",
+                        "creatures emerges"
+                    ],
+                    "gallery": [
+                        "/assets/img/Cuise/Cuise-pic1.png",
+                        "/assets/img/Cuise/Cuise-pic2.png",
+                        "/assets/img/Cuise/Cuise-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "Development",
+                    "intro": "The Cuise is a roguelike shoot 'em up video game that I developed together with three classmates over the course of a weekend as a game jam project. With only a few days, a tiny team, and long nights of work, we pushed through the entire development cycle to make a complete playable experience.",
+                    "introHighlights": [
+                        "roguelike shoot 'em up",
+                        "with three classmates",
+                        "weekend",
+                        "game jam",
+                        "few days",
+                        "finished",
+                        "few days",
+                        "development cycle",
+                        "playable"
+                    ],
+                    "gallery": [
+                        "/assets/img/Cuise/Cuise-pic4.png",
+                        "/assets/img/Cuise/Cuise-pic5.png",
+                        "/assets/img/Cuise/Cuise-pic6.png",
+                        "/assets/img/Cuise/Cuise-pic7.png",
+                        "/assets/img/Cuise/Cuise-pic8.png",
+                        "/assets/img/Cuise/Cuise-pic9.png"
+                    ],
+                    "galleryAlts": [
+                        "Development 1",
+                        "Development 2",
+                        "Development 3",
+                        "Development 4",
+                        "Development 5",
+                        "Development 6"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "/assets/img/tools/construct3.png",
+                    "label": "Construct 3"
+                },
+                {
+                    "src": "/assets/img/tools/aseprite.png",
+                    "label": "Aseprite"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "indexo",
+            "title": "Indexo",
+            "bgImage": "/assets/img/Indexo/indexo-bg.png",
+            "playLink": "https://indexo.lv/",
+            "playText": "Check it!",
+            "playIcon": "/assets/img/about/download-icon.png",
+            "type": "Freelance project",
+            "years": "2025",
+            "contributions": [
+                "Illustrator",
+                "Procreate"
+            ],
+            "team": [
+                "Me"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "I created a set of 14 final illustrations for the Latvian bank Indexo, developed through multiple iterations and versions in close collaboration with the client. The project required balancing creativity with brand guidelines, refining concepts through feedback, and delivering a consistent visual style tailored to their needs.",
+                    "introHighlights": [
+                        "set of 14",
+                        "Latvian bank",
+                        "versions",
+                        "collaboration",
+                        "client",
+                        "brand guidelines",
+                        "feedback",
+                        "consistent visual style"
+                    ],
+                    "gallery": [
+                        "/assets/img/Indexo/indexo-pic1.png",
+                        "/assets/img/Indexo/indexo-pic2.png",
+                        "/assets/img/Indexo/indexo-pic3.png",
+                        "/assets/img/Indexo/indexo-pic4.png",
+                        "/assets/img/Indexo/indexo-pic5.png",
+                        "/assets/img/Indexo/indexo-pic6.png",
+                        "/assets/img/Indexo/indexo-pic7.png",
+                        "/assets/img/Indexo/indexo-pic8.png",
+                        "/assets/img/Indexo/indexo-pic9.png",
+                        "/assets/img/Indexo/indexo-pic10.png",
+                        "/assets/img/Indexo/indexo-pic11.png",
+                        "/assets/img/Indexo/indexo-pic12.png",
+                        "/assets/img/Indexo/indexo-pic13.png",
+                        "/assets/img/Indexo/indexo-pic14.png",
+                        "/assets/img/Indexo/indexo-pic15.png",
+                        "/assets/img/Indexo/indexo-pic16.png",
+                        "/assets/img/Indexo/indexo-pic17.png",
+                        "/assets/img/Indexo/indexo-pic18.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "/assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "waterpark",
+            "title": "Waterpark & Watersport Center",
+            "bgImage": "/assets/img/waterpark/waterpark-bg-top.png",
+            "playLink": "https://keszthelyivizipark.hu/",
+            "playText": "Check it!",
+            "playIcon": "/assets/img/about/download-icon.png",
+            "type": "Freelance project",
+            "years": "2023 - 2025",
+            "contributions": [
+                "Illustrator",
+                "Graphic designer"
+            ],
+            "team": [
+                "Me"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "I spent three years designing for Keszthelyi Vízpark és Vízisport Központ, a lively watersports hub on Lake Balaton. During that time, I created visuals for their events, services, and shop products, helping the center shape a clear and welcoming identity. The work ranged from playful summer graphics to polished branded materials used throughout the park.",
+                    "introHighlights": [
+                        "three years designing",
+                        "lively watersports hub",
+                        "visuals",
+                        "clear",
+                        "welcoming identity",
+                        "summer graphics",
+                        "polished branded materials"
+                    ],
+                    "gallery": [
+                        "/assets/img/waterpark/waterpark-pic1.png",
+                        "/assets/img/waterpark/waterpark-pic2.png",
+                        "/assets/img/waterpark/waterpark-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "Waterpark & Shop",
+                    "usePictureContainer4": true,
+                    "gallery": [
+                        "/assets/img/waterpark/waterpark-pic4.png",
+                        "/assets/img/waterpark/waterpark-pic5.png",
+                        "/assets/img/waterpark/waterpark-pic6.png",
+                        "/assets/img/waterpark/waterpark-pic7.png",
+                        "/assets/img/waterpark/waterpark-pic8.png",
+                        "/assets/img/waterpark/waterpark-pic9.png",
+                        "/assets/img/waterpark/waterpark-pic10.png",
+                        "/assets/img/waterpark/waterpark-pic11.png",
+                        "/assets/img/waterpark/waterpark-pic12.png",
+                        "/assets/img/waterpark/waterpark-pic13.png"
+                    ],
+                    "galleryAlts": [
+                        "Development 1",
+                        "Development 2",
+                        "Development 3",
+                        "Development 4"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "/assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
+                },
+                {
+                    "src": "/assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                },
+                {
+                    "src": "/assets/img/tools/photoshop.png",
+                    "label": "Photoshop"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
             "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
         }
     ]

@@ -19,5 +19,26 @@
         "imageSrc": "assets/img/CourtCheester/courtcheester-bg.png",
         "alt": "Cheese",
         "title": "Court Cheester"
+    },
+    {
+        "category": "games",
+        "slug": "cuise",
+        "imageSrc": "assets/img/portfolio/Cuise.png",
+        "alt": "Cuise",
+        "title": "The Cuise"
+    },
+    {
+        "category": "2d",
+        "slug": "indexo",
+        "imageSrc": "assets/img/portfolio/Indexo.png",
+        "alt": "indexo",
+        "title": "Indexo"
+    },
+    {
+        "category": "2d",
+        "slug": "waterpark",
+        "imageSrc": "assets/img/portfolio/waterpark.png",
+        "alt": "waterpark",
+        "title": "Waterpark"
     }
 ]

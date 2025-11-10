@@ -912,7 +912,6 @@ img {
 .work {
   position: relative;
   padding-block: 4rem 3rem;
-  background: linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, 0));
   background-image: linear-gradient(to top, rgba(19, 20, 13, 1), rgba(19, 20, 13, .6), rgba(19, 20, 13, 0)), var(--bg-image);
   background-size: cover;
   background-repeat: no-repeat;
@@ -920,12 +919,21 @@ img {
   min-height: 50vh;
 }
 
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .work-title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   text-align: center;
-  height: 50px;
   color: var(--first-color);
+  line-height: 1.1;
+  min-height: 3.5rem;
+  margin-top: 4rem;
 }
 
 .work-description {
@@ -933,7 +941,7 @@ img {
   text-align: center;
   color: var(--white-color);
   font-weight: var(--font-italice);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .work-description span {
@@ -941,34 +949,32 @@ img {
 }
 
 .work-details {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 2rem;
+  padding-top: 2rem;
 }
 
 .work-detail {
-  flex: 0 1 auto;
-  min-width: max-content;
+  min-width: 0;
 }
 
-/* Labels */
 .work-detail-label {
   display: block;
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.75rem;
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
 }
 
-/* Info and lists */
 .work-detail-info {
   color: var(--white-color);
   font-size: var(--normal-font-size);
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.5;
 }
 
 .contribution-list,
@@ -981,23 +987,30 @@ img {
   text-align: left;
 }
 
-/* Two-column layout inside Role section */
 .contribution-list {
   columns: 2;
-  column-gap: 2.5rem;
+  column-gap: 2rem;
 }
 
 .contribution-list li {
   break-inside: avoid;
 }
 
+.title-container {
+  justify-content: center;
+}
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 3rem;
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .work-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .work-details {
+    grid-template-columns: 1fr;
+  }
 }
 
 .picture,
@@ -1124,6 +1137,65 @@ img {
   }
 }
 
+.picture-container--4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+.picture-container--4 .picture-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.picture-container--4 {
+  grid-template-rows: auto auto;
+}
+
+.picture-container--4 .picture-img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+}
+
+.picture-container--4 .picture-img:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+}
+
+.picture-container--4 .picture-img:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+}
+
+.picture-container--4 .picture-img:nth-child(4) {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+}
+
+@media (max-width: 640px) {
+  .picture-container--4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .picture-container--4 .picture-img {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    align-self: auto;
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 /*=============== SCROLL BAR ===============*/

@@ -1,4 +1,3 @@
-// work.js  — dynamic project page renderer
 
 // ================== CONFIG ==================
 const DATA_PATH = '/assets/json/works.json'; // root-relative is safest
@@ -108,13 +107,22 @@ function populatePage(d) {
         else titleEl.remove();
     }
 
-    // Play button
+    /// Play button
     const playBtn = $('.slide-btn');
     if (playBtn) {
         const iconImg = playBtn.querySelector('img');
+        const spanText = playBtn.querySelector('span');
+
         if (d.playLink) playBtn.setAttribute('href', d.playLink);
         if (iconImg && d.playIcon) iconImg.src = d.playIcon;
-        if (!d.playLink && !d.playIcon) playBtn.remove();
+
+        if (spanText && d.playText) {
+            spanText.textContent = d.playText;
+        }
+
+        if (!d.playLink && !d.playIcon && !d.playText) {
+            playBtn.remove();
+        }
     }
 
     // Background image CSS var (header)
@@ -232,7 +240,13 @@ function populatePage(d) {
                 const galleryWrap = document.createElement('div');
                 galleryWrap.className = 'picture-gallery';
                 const grid = document.createElement('div');
-                grid.className = 'picture-container grid';
+                const baseClass = 'picture-container grid';
+                if (sec.usePictureContainer4) {
+                    grid.className = `${baseClass} picture-container--4`;
+                } else {
+                    grid.className = baseClass;
+                }
+
 
                 sec.gallery.forEach((src, i) => {
                     const alt = (Array.isArray(sec.galleryAlts) && sec.galleryAlts[i])
@@ -327,13 +341,15 @@ function populatePage(d) {
     // ---- FOOTER (bg + copy + socials) ----
     const footer = $('footer.footer');
     if (footer) {
-        if (d.bgImage) {
+        if (d.footerBgImage) {
+            footer.style.setProperty('--ft-image', `url("${d.footerBgImage}")`);
+        } else if (d.bgImage) {
             footer.style.setProperty('--ft-image', `url("${d.bgImage}")`);
         } else {
             footer.style.removeProperty('--ft-image');
-            footer.style.backgroundImage = '';
         }
     }
+
 
     const footerCopy = $('.footer-copy');
     if (footerCopy) {
