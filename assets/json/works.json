@@ -162,27 +162,27 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/unity.png",
+                    "src": "assets/img/tools/unity.png",
                     "label": "Unity"
                 },
                 {
-                    "src": "/assets/img/tools/substance.png",
+                    "src": "assets/img/tools/substance.png",
                     "label": "Substance Painter"
                 },
                 {
-                    "src": "/assets/img/tools/zbrush.png",
+                    "src": "assets/img/tools/zbrush.png",
                     "label": "ZBrush"
                 },
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "label": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/blender.png",
+                    "src": "assets/img/tools/blender.png",
                     "label": "Blender"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 }
             ],
@@ -197,8 +197,8 @@
             "slug": "suburbs",
             "title": "Suburbs",
             "playLink": "https://frwombat.itch.io/suburbs",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/Suburbs/Suburbs-bg-top.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/Suburbs/Suburbs-bg-top.png",
             "sections": [
                 {
                     "subtitle": "About",
@@ -211,9 +211,9 @@
                         "avoiding cans"
                     ],
                     "gallery": [
-                        "/assets/img/Suburbs/Suburbs-pic1.png",
-                        "/assets/img/Suburbs/Suburbs-pic2.png",
-                        "/assets/img/Suburbs/Suburbs-pic3.png"
+                        "assets/img/Suburbs/Suburbs-pic1.png",
+                        "assets/img/Suburbs/Suburbs-pic2.png",
+                        "assets/img/Suburbs/Suburbs-pic3.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -236,10 +236,10 @@
                     ],
                     "usePictureContainer4": true,
                     "gallery": [
-                        "/assets/img/Suburbs/Suburbs-pic4.png",
-                        "/assets/img/Suburbs/Suburbs-pic5.png",
-                        "/assets/img/Suburbs/Suburbs-pic6.png",
-                        "/assets/img/Suburbs/Suburbs-pic7.png"
+                        "assets/img/Suburbs/Suburbs-pic4.png",
+                        "assets/img/Suburbs/Suburbs-pic5.png",
+                        "assets/img/Suburbs/Suburbs-pic6.png",
+                        "assets/img/Suburbs/Suburbs-pic7.png"
                     ],
                     "galleryAlts": [
                         "Development 1",
@@ -251,15 +251,15 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/construct3.png",
+                    "src": "assets/img/tools/construct3.png",
                     "label": "Construct 3"
                 },
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "label": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 }
             ],
@@ -268,15 +268,15 @@
                 "facebook": "https://www.facebook.com/your_page",
                 "linkedin": "https://www.linkedin.com/in/your_profile"
             },
-            "footerBgImage": "/assets/img/Suburbs/Suburbs-bg-bottom.png",
+            "footerBgImage": "assets/img/Suburbs/Suburbs-bg-bottom.png",
             "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
         },
         {
             "slug": "cheese",
             "title": "Court Cheester",
             "playLink": "https://eeeggr.itch.io/court-cheester",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/CourtCheester/courtcheester-bg.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/CourtCheester/courtcheester-bg.png",
             "type": "Finnish Game Jam",
             "years": "26th – 28th of January, 2024",
             "contributions": [
@@ -302,9 +302,9 @@
                         "laugh"
                     ],
                     "gallery": [
-                        "/assets/img/CourtCheester/Cheese-pic1.png",
-                        "/assets/img/CourtCheester/Cheese-pic2.png",
-                        "/assets/img/CourtCheester/Cheese-pic3.png"
+                        "assets/img/CourtCheester/Cheese-pic1.png",
+                        "assets/img/CourtCheester/Cheese-pic2.png",
+                        "assets/img/CourtCheester/Cheese-pic3.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -328,12 +328,12 @@
                         "playable"
                     ],
                     "gallery": [
-                        "/assets/img/CourtCheester/Cheese-pic4.png",
-                        "/assets/img/CourtCheester/Cheese-pic5.png",
-                        "/assets/img/CourtCheester/Cheese-pic6.png",
-                        "/assets/img/CourtCheester/Cheese-pic7.png",
-                        "/assets/img/CourtCheester/Cheese-pic8.png",
-                        "/assets/img/CourtCheester/Cheese-pic9.png"
+                        "assets/img/CourtCheester/Cheese-pic4.png",
+                        "assets/img/CourtCheester/Cheese-pic5.png",
+                        "assets/img/CourtCheester/Cheese-pic6.png",
+                        "assets/img/CourtCheester/Cheese-pic7.png",
+                        "assets/img/CourtCheester/Cheese-pic8.png",
+                        "assets/img/CourtCheester/Cheese-pic9.png"
                     ],
                     "galleryAlts": [
                         "Development 1",
@@ -347,19 +347,19 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/construct3.png",
+                    "src": "assets/img/tools/construct3.png",
                     "label": "Construct 3"
                 },
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "label": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/aseprite.png",
+                    "src": "assets/img/tools/aseprite.png",
                     "label": "Aseprite"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 }
             ],
@@ -374,8 +374,8 @@
             "slug": "cuise",
             "title": "The Cuise",
             "playLink": "https://malenarose.itch.io/the-cuise",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/Cuise/Cuise-bg.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/Cuise/Cuise-bg.png",
             "type": "Spring Game Jam",
             "years": "5th – 8th of April, 2024",
             "contributions": [
@@ -401,9 +401,9 @@
                         "creatures emerges"
                     ],
                     "gallery": [
-                        "/assets/img/Cuise/Cuise-pic1.png",
-                        "/assets/img/Cuise/Cuise-pic2.png",
-                        "/assets/img/Cuise/Cuise-pic3.png"
+                        "assets/img/Cuise/Cuise-pic1.png",
+                        "assets/img/Cuise/Cuise-pic2.png",
+                        "assets/img/Cuise/Cuise-pic3.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -426,12 +426,12 @@
                         "playable"
                     ],
                     "gallery": [
-                        "/assets/img/Cuise/Cuise-pic4.png",
-                        "/assets/img/Cuise/Cuise-pic5.png",
-                        "/assets/img/Cuise/Cuise-pic6.png",
-                        "/assets/img/Cuise/Cuise-pic7.png",
-                        "/assets/img/Cuise/Cuise-pic8.png",
-                        "/assets/img/Cuise/Cuise-pic9.png"
+                        "assets/img/Cuise/Cuise-pic4.png",
+                        "assets/img/Cuise/Cuise-pic5.png",
+                        "assets/img/Cuise/Cuise-pic6.png",
+                        "assets/img/Cuise/Cuise-pic7.png",
+                        "assets/img/Cuise/Cuise-pic8.png",
+                        "assets/img/Cuise/Cuise-pic9.png"
                     ],
                     "galleryAlts": [
                         "Development 1",
@@ -445,15 +445,15 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/construct3.png",
+                    "src": "assets/img/tools/construct3.png",
                     "label": "Construct 3"
                 },
                 {
-                    "src": "/assets/img/tools/aseprite.png",
+                    "src": "assets/img/tools/aseprite.png",
                     "label": "Aseprite"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 }
             ],
@@ -467,10 +467,10 @@
         {
             "slug": "indexo",
             "title": "Indexo",
-            "bgImage": "/assets/img/Indexo/indexo-bg.png",
+            "bgImage": "assets/img/Indexo/indexo-bg.png",
             "playLink": "https://indexo.lv/",
             "playText": "Check it!",
-            "playIcon": "/assets/img/about/download-icon.png",
+            "playIcon": "assets/img/about/download-icon.png",
             "type": "Freelance project",
             "years": "2025",
             "contributions": [
@@ -495,24 +495,24 @@
                         "consistent visual style"
                     ],
                     "gallery": [
-                        "/assets/img/Indexo/indexo-pic1.png",
-                        "/assets/img/Indexo/indexo-pic2.png",
-                        "/assets/img/Indexo/indexo-pic3.png",
-                        "/assets/img/Indexo/indexo-pic4.png",
-                        "/assets/img/Indexo/indexo-pic5.png",
-                        "/assets/img/Indexo/indexo-pic6.png",
-                        "/assets/img/Indexo/indexo-pic7.png",
-                        "/assets/img/Indexo/indexo-pic8.png",
-                        "/assets/img/Indexo/indexo-pic9.png",
-                        "/assets/img/Indexo/indexo-pic10.png",
-                        "/assets/img/Indexo/indexo-pic11.png",
-                        "/assets/img/Indexo/indexo-pic12.png",
-                        "/assets/img/Indexo/indexo-pic13.png",
-                        "/assets/img/Indexo/indexo-pic14.png",
-                        "/assets/img/Indexo/indexo-pic15.png",
-                        "/assets/img/Indexo/indexo-pic16.png",
-                        "/assets/img/Indexo/indexo-pic17.png",
-                        "/assets/img/Indexo/indexo-pic18.png"
+                        "assets/img/Indexo/indexo-pic1.png",
+                        "assets/img/Indexo/indexo-pic2.png",
+                        "assets/img/Indexo/indexo-pic3.png",
+                        "assets/img/Indexo/indexo-pic4.png",
+                        "assets/img/Indexo/indexo-pic5.png",
+                        "assets/img/Indexo/indexo-pic6.png",
+                        "assets/img/Indexo/indexo-pic7.png",
+                        "assets/img/Indexo/indexo-pic8.png",
+                        "assets/img/Indexo/indexo-pic9.png",
+                        "assets/img/Indexo/indexo-pic10.png",
+                        "assets/img/Indexo/indexo-pic11.png",
+                        "assets/img/Indexo/indexo-pic12.png",
+                        "assets/img/Indexo/indexo-pic13.png",
+                        "assets/img/Indexo/indexo-pic14.png",
+                        "assets/img/Indexo/indexo-pic15.png",
+                        "assets/img/Indexo/indexo-pic16.png",
+                        "assets/img/Indexo/indexo-pic17.png",
+                        "assets/img/Indexo/indexo-pic18.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -523,11 +523,11 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "label": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 }
             ],
@@ -541,10 +541,10 @@
         {
             "slug": "waterpark",
             "title": "Waterpark & Watersport Center",
-            "bgImage": "/assets/img/waterpark/waterpark-bg-top.png",
+            "bgImage": "assets/img/waterpark/waterpark-bg-top.png",
             "playLink": "https://keszthelyivizipark.hu/",
             "playText": "Check it!",
-            "playIcon": "/assets/img/about/download-icon.png",
+            "playIcon": "assets/img/about/download-icon.png",
             "type": "Freelance project",
             "years": "2023 - 2025",
             "contributions": [
@@ -568,9 +568,9 @@
                         "polished branded materials"
                     ],
                     "gallery": [
-                        "/assets/img/waterpark/waterpark-pic1.png",
-                        "/assets/img/waterpark/waterpark-pic2.png",
-                        "/assets/img/waterpark/waterpark-pic3.png"
+                        "assets/img/waterpark/waterpark-pic1.png",
+                        "assets/img/waterpark/waterpark-pic2.png",
+                        "assets/img/waterpark/waterpark-pic3.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -582,16 +582,16 @@
                     "subtitle": "Waterpark & Shop",
                     "usePictureContainer4": true,
                     "gallery": [
-                        "/assets/img/waterpark/waterpark-pic4.png",
-                        "/assets/img/waterpark/waterpark-pic5.png",
-                        "/assets/img/waterpark/waterpark-pic6.png",
-                        "/assets/img/waterpark/waterpark-pic7.png",
-                        "/assets/img/waterpark/waterpark-pic8.png",
-                        "/assets/img/waterpark/waterpark-pic9.png",
-                        "/assets/img/waterpark/waterpark-pic10.png",
-                        "/assets/img/waterpark/waterpark-pic11.png",
-                        "/assets/img/waterpark/waterpark-pic12.png",
-                        "/assets/img/waterpark/waterpark-pic13.png"
+                        "assets/img/waterpark/waterpark-pic4.png",
+                        "assets/img/waterpark/waterpark-pic5.png",
+                        "assets/img/waterpark/waterpark-pic6.png",
+                        "assets/img/waterpark/waterpark-pic7.png",
+                        "assets/img/waterpark/waterpark-pic8.png",
+                        "assets/img/waterpark/waterpark-pic9.png",
+                        "assets/img/waterpark/waterpark-pic10.png",
+                        "assets/img/waterpark/waterpark-pic11.png",
+                        "assets/img/waterpark/waterpark-pic12.png",
+                        "assets/img/waterpark/waterpark-pic13.png"
                     ],
                     "galleryAlts": [
                         "Development 1",
@@ -603,15 +603,15 @@
             ],
             "tools": [
                 {
-                    "src": "/assets/img/tools/illustrator.png",
+                    "src": "assets/img/tools/illustrator.png",
                     "label": "Illustrator"
                 },
                 {
-                    "src": "/assets/img/tools/procreate.png",
+                    "src": "assets/img/tools/procreate.png",
                     "label": "Procreate"
                 },
                 {
-                    "src": "/assets/img/tools/photoshop.png",
+                    "src": "assets/img/tools/photoshop.png",
                     "label": "Photoshop"
                 }
             ],
