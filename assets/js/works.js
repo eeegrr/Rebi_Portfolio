@@ -1,9 +1,8 @@
 
 // ================== CONFIG ==================
-const DATA_PATH = '/assets/json/works.json'; // root-relative is safest
-const USE_INLINE_FALLBACK = false;           // set true and fill INLINE_DATA for local testing
+const DATA_PATH = 'assets/json/works.json';
+const USE_INLINE_FALLBACK = false;
 const INLINE_DATA = {
-    /* optional local JSON for offline testing */
 };
 
 // ================== HELPERS ==================
