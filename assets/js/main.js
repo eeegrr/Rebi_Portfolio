@@ -29,17 +29,18 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /*=============== ADD BLUR HEADER ===============*/
 const blurHeader = () => {
     const header = document.getElementById('header');
-    this.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header');
-}
+    if (!header) return;
+    window.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header');
+};
 window.addEventListener('scroll', blurHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up')
-    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-        : scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+    const el = document.getElementById('scroll-up');
+    if (!el) return;
+    window.scrollY >= 350 ? el.classList.add('show-scroll') : el.classList.remove('show-scroll');
+};
+window.addEventListener('scroll', scrollUp);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -61,29 +62,28 @@ const scrollActive = () => {
     })
 }
 
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive);
 
-    /*=============== cursor ===============*/
-    (function () {
-        var down = false;
-        window.addEventListener('mousedown', function () {
-            if (!down) {
-                down = true;
-                document.body.classList.add('is-clicking');
-            }
-        });
-        window.addEventListener('mouseup', function () {
-            if (down) {
-                down = false;
-                document.body.classList.remove('is-clicking');
-            }
-        });
-        // If mouse leaves window while pressed, clean up on re-entry
-        window.addEventListener('blur', function () {
+/*=============== cursor ===============*/
+; (() => {
+    let down = false;
+    window.addEventListener('mousedown', () => {
+        if (!down) {
+            down = true;
+            document.body.classList.add('is-clicking');
+        }
+    });
+    window.addEventListener('mouseup', () => {
+        if (down) {
             down = false;
             document.body.classList.remove('is-clicking');
-        });
-    })();
+        }
+    });
+    window.addEventListener('blur', () => {
+        down = false;
+        document.body.classList.remove('is-clicking');
+    });
+})();
 
 /*=============== SEND MESSAGE ===============*/
 (function () {

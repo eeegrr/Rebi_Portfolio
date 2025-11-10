@@ -220,7 +220,6 @@ function populatePage(d) {
                 subtitle.textContent = sec.subtitle;
                 section.appendChild(subtitle);
             }
-            section.appendChild(subtitle);
 
             // intro (optional, supports highlights)
             if (sec.intro) {

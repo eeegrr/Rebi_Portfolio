@@ -4,8 +4,8 @@
             "slug": "etherlocked",
             "title": "EtherLocked",
             "playLink": "#",
-            "playIcon": "/assets/img/about/download-icon.png",
-            "bgImage": "/assets/img/EtherLocked/EtherLocked-bg.png",
+            "playIcon": "assets/img/about/download-icon.png",
+            "bgImage": "assets/img/EtherLocked/EtherLocked-bg.png",
             "type": "School project",
             "years": "2024–2025",
             "contributions": [
@@ -37,9 +37,9 @@
                         "multiple roles"
                     ],
                     "gallery": [
-                        "/assets/img/EtherLocked/EtherLocked-pic1.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic2.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic3.png"
+                        "assets/img/EtherLocked/EtherLocked-pic1.png",
+                        "assets/img/EtherLocked/EtherLocked-pic2.png",
+                        "assets/img/EtherLocked/EtherLocked-pic3.png"
                     ],
                     "galleryAlts": [
                         "About 1",
@@ -60,12 +60,12 @@
                         "concept art"
                     ],
                     "gallery": [
-                        "/assets/img/EtherLocked/EtherLocked-pic4.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic5.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic6.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic7.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic8.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic9.png"
+                        "assets/img/EtherLocked/EtherLocked-pic4.png",
+                        "assets/img/EtherLocked/EtherLocked-pic5.png",
+                        "assets/img/EtherLocked/EtherLocked-pic6.png",
+                        "assets/img/EtherLocked/EtherLocked-pic7.png",
+                        "assets/img/EtherLocked/EtherLocked-pic8.png",
+                        "assets/img/EtherLocked/EtherLocked-pic9.png"
                     ],
                     "galleryAlts": [
                         "2D Art 1",
@@ -93,24 +93,24 @@
                         "arranged"
                     ],
                     "gallery": [
-                        "/assets/img/EtherLocked/EtherLocked-pic10.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic11.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic12.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic13.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic14.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic15.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic16.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic17.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic18.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic19.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic20.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic21.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic22.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic23.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic24.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic25.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic26.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic27.png"
+                        "assets/img/EtherLocked/EtherLocked-pic10.png",
+                        "assets/img/EtherLocked/EtherLocked-pic11.png",
+                        "assets/img/EtherLocked/EtherLocked-pic12.png",
+                        "assets/img/EtherLocked/EtherLocked-pic13.png",
+                        "assets/img/EtherLocked/EtherLocked-pic14.png",
+                        "assets/img/EtherLocked/EtherLocked-pic15.png",
+                        "assets/img/EtherLocked/EtherLocked-pic16.png",
+                        "assets/img/EtherLocked/EtherLocked-pic17.png",
+                        "assets/img/EtherLocked/EtherLocked-pic18.png",
+                        "assets/img/EtherLocked/EtherLocked-pic19.png",
+                        "assets/img/EtherLocked/EtherLocked-pic20.png",
+                        "assets/img/EtherLocked/EtherLocked-pic21.png",
+                        "assets/img/EtherLocked/EtherLocked-pic22.png",
+                        "assets/img/EtherLocked/EtherLocked-pic23.png",
+                        "assets/img/EtherLocked/EtherLocked-pic24.png",
+                        "assets/img/EtherLocked/EtherLocked-pic25.png",
+                        "assets/img/EtherLocked/EtherLocked-pic26.png",
+                        "assets/img/EtherLocked/EtherLocked-pic27.png"
                     ],
                     "galleryAlts": [
                         "3D Art 1",
@@ -137,15 +137,15 @@
                     "subtitle": "Gallery",
                     "intro": "More in-game pictures, sketches, out-of-bounds pictures, layouts etc.",
                     "gallery": [
-                        "/assets/img/EtherLocked/EtherLocked-pic28.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic29.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic30.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic31.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic32.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic33.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic34.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic35.png",
-                        "/assets/img/EtherLocked/EtherLocked-pic36.png"
+                        "assets/img/EtherLocked/EtherLocked-pic28.png",
+                        "assets/img/EtherLocked/EtherLocked-pic29.png",
+                        "assets/img/EtherLocked/EtherLocked-pic30.png",
+                        "assets/img/EtherLocked/EtherLocked-pic31.png",
+                        "assets/img/EtherLocked/EtherLocked-pic32.png",
+                        "assets/img/EtherLocked/EtherLocked-pic33.png",
+                        "assets/img/EtherLocked/EtherLocked-pic34.png",
+                        "assets/img/EtherLocked/EtherLocked-pic35.png",
+                        "assets/img/EtherLocked/EtherLocked-pic36.png"
                     ],
                     "galleryAlts": [
                         "Gallery 1",
