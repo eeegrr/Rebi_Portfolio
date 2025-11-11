@@ -5,7 +5,7 @@
             "title": "EtherLocked",
             "playLink": "#",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/EtherLocked/EtherLocked-bg.png",
+            "bgImage": "/assets/img/EtherLocked/EtherLocked-bg.png",
             "type": "School project",
             "years": "2024–2025",
             "contributions": [
@@ -198,7 +198,7 @@
             "title": "Suburbs",
             "playLink": "https://frwombat.itch.io/suburbs",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/Suburbs/Suburbs-bg-top.png",
+            "bgImage": "/assets/img/Suburbs/Suburbs-bg-top.png",
             "sections": [
                 {
                     "subtitle": "About",
@@ -268,7 +268,7 @@
                 "facebook": "https://www.facebook.com/your_page",
                 "linkedin": "https://www.linkedin.com/in/your_profile"
             },
-            "footerBgImage": "assets/img/Suburbs/Suburbs-bg-bottom.png",
+            "footerBgImage": "/assets/img/Suburbs/Suburbs-bg-bottom.png",
             "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
         },
         {
@@ -276,7 +276,7 @@
             "title": "Court Cheester",
             "playLink": "https://eeeggr.itch.io/court-cheester",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/CourtCheester/courtcheester-bg.png",
+            "bgImage": "/assets/img/CourtCheester/courtcheester-bg.png",
             "type": "Finnish Game Jam",
             "years": "26th – 28th of January, 2024",
             "contributions": [
@@ -375,7 +375,7 @@
             "title": "The Cuise",
             "playLink": "https://malenarose.itch.io/the-cuise",
             "playIcon": "assets/img/about/download-icon.png",
-            "bgImage": "assets/img/Cuise/Cuise-bg.png",
+            "bgImage": "/assets/img/Cuise/Cuise-bg.png",
             "type": "Spring Game Jam",
             "years": "5th – 8th of April, 2024",
             "contributions": [
@@ -467,7 +467,7 @@
         {
             "slug": "indexo",
             "title": "Indexo",
-            "bgImage": "assets/img/Indexo/indexo-bg.png",
+            "bgImage": "/assets/img/Indexo/indexo-bg.png",
             "playLink": "https://indexo.lv/",
             "playText": "Check it!",
             "playIcon": "assets/img/about/download-icon.png",
@@ -541,7 +541,7 @@
         {
             "slug": "waterpark",
             "title": "Waterpark & Watersport Center",
-            "bgImage": "assets/img/waterpark/waterpark-bg-top.png",
+            "bgImage": "/assets/img/waterpark/waterpark-bg-top.png",
             "playLink": "https://keszthelyivizipark.hu/",
             "playText": "Check it!",
             "playIcon": "assets/img/about/download-icon.png",
