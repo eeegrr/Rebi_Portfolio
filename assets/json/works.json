@@ -541,7 +541,7 @@
         {
             "slug": "waterpark",
             "title": "Waterpark & Watersport Center",
-            "bgImage": "/assets/img/waterpark/waterpark-bg-top.png",
+            "bgImage": "../img/waterpark/waterpark-bg-top.png",
             "playLink": "https://keszthelyivizipark.hu/",
             "playText": "Check it!",
             "playIcon": "assets/img/about/download-icon.png",
