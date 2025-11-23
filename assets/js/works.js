@@ -135,6 +135,42 @@ function populatePage(d) {
         }
     }
 
+    // ---- WORK DETAILS: either line OR container ----
+    const workDetailsContainer = $('.work .work-details');
+
+    const useLineLayout = Array.isArray(d.detailLine) && d.detailLine.length > 0;
+
+    if (workDetailsContainer) {
+        const existingLine = workDetailsContainer.querySelector('.work-detail-line');
+
+        if (useLineLayout) {
+            // remove container-style blocks
+            $$('.work .work-detail').forEach(el => el.remove());
+
+            // remove any existing line from template (not needed if you removed it in HTML)
+            if (existingLine) existingLine.remove();
+
+            // build line from detailLine
+            const lineDiv = document.createElement('div');
+            lineDiv.className = 'work-detail-line';
+
+            const ul = document.createElement('ul');
+            ul.className = 'detail-list';
+
+            d.detailLine.forEach(text => {
+                const li = document.createElement('li');
+                li.textContent = text;
+                ul.appendChild(li);
+            });
+
+            lineDiv.appendChild(ul);
+            workDetailsContainer.appendChild(lineDiv);
+        } else {
+            // container layout only → make sure line is gone
+            if (existingLine) existingLine.remove();
+        }
+    }
+
     // Type block ("Type:")
     const typeBlock = selectWorkDetailByLabel('Type:');
     if (typeBlock) {
@@ -172,6 +208,8 @@ function populatePage(d) {
             roleBlock.remove();
         }
     }
+
+
 
     // Team block ("Team:")
     const teamBlock = selectWorkDetailByLabel('Team:');

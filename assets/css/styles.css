@@ -936,6 +936,39 @@ img {
   margin-top: 4rem;
 }
 
+.work .work-details.container {
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+.work-detail-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.detail-list li {
+  font-weight: 500;
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+}
+
 .work-description {
   font-size: var(--h3-font-size);
   text-align: center;

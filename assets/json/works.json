@@ -19,14 +19,14 @@
                 "Concept Art"
             ],
             "team": [
-                "Me",
                 "Evelīna Graumane",
-                "Elīza Drāzniece"
+                "Elīza Drāzniece",
+                "Mate Forgách"
             ],
             "sections": [
                 {
                     "subtitle": "About",
-                    "intro": "EtherLocked is a first-person puzzle game that I developed together with two classmates over the course of a year as a school project. Working in a small team of three gave us the chance to explore every stage of development closely, from concept to final build, while each of us took on multiple roles.",
+                    "intro": "EtherLocked is a first-person puzzle game that I developed together with two classmates and my brother over the course of a year as a school project. Working in a small team of three gave us the chance to explore every stage of development closely, from concept to final build, while each of us took on multiple roles.",
                     "introHighlights": [
                         "first-person puzzle",
                         "two classmates",
@@ -196,6 +196,11 @@
         {
             "slug": "suburbs",
             "title": "Suburbs",
+            "detailLine": [
+                "School project",
+                "Designer/Artist/Developer",
+                "2024"
+            ],
             "playLink": "https://frwombat.itch.io/suburbs",
             "playIcon": "assets/img/about/download-icon.png",
             "bgImage": "../img/Suburbs/Suburbs-bg-top.png",
@@ -286,7 +291,6 @@
                 "In-game UI"
             ],
             "team": [
-                "Me",
                 "Evelīna Graumane",
                 "Elīza Drāzniece"
             ],
@@ -385,7 +389,6 @@
                 "In-game UI/UX"
             ],
             "team": [
-                "Me",
                 "Marta Lysaczenko",
                 "Jacob Roginski",
                 "Malena Rose"
@@ -471,14 +474,10 @@
             "playLink": "https://indexo.lv/",
             "playText": "Check it!",
             "playIcon": "assets/img/about/download-icon.png",
-            "type": "Freelance project",
-            "years": "2025",
-            "contributions": [
+            "detailLine": [
+                "Freelance project",
                 "Illustrator",
-                "Procreate"
-            ],
-            "team": [
-                "Me"
+                "2024"
             ],
             "sections": [
                 {
@@ -545,14 +544,10 @@
             "playLink": "https://keszthelyivizipark.hu/",
             "playText": "Check it!",
             "playIcon": "assets/img/about/download-icon.png",
-            "type": "Freelance project",
-            "years": "2023 - 2025",
-            "contributions": [
-                "Illustrator",
-                "Graphic designer"
-            ],
-            "team": [
-                "Me"
+            "detailLine": [
+                "Freelance project",
+                "Illustrator/Graphic designer",
+                "2023-2025"
             ],
             "sections": [
                 {
@@ -613,6 +608,243 @@
                 {
                     "src": "assets/img/tools/photoshop.png",
                     "label": "Photoshop"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "cards",
+            "title": "Mythology Playing Cards",
+            "bgImage": "../img/PlayingCards/cards-bg-top.png",
+            "type": "School project",
+            "years": "2024",
+            "contributions": [
+                "Card layout",
+                "Design",
+                "Adapting idea"
+            ],
+            "team": [
+                "Evelīna Graumane",
+                "Elīza Drāzniece"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "This project started as a classroom challenge where our team of three had to design and produce our own card game. We decided to base the gameplay on the familiar rules of Shithead (also known as Karma, Palace, or Shed), adapting its mechanics. To give the game a unique identity, we chose mythical creatures as the central theme. Each creature was put to their most fitting number based on the rules.",
+                    "introHighlights": [
+                        "design",
+                        "produce",
+                        "card game",
+                        "base the gameplay",
+                        "Shithead",
+                        "mythical creatures",
+                        "central theme"
+                    ],
+                    "gallery": [
+                        "assets/img/PlayingCards/Cards-pic1.png",
+                        "assets/img/PlayingCards/Cards-pic2.png",
+                        "assets/img/PlayingCards/Cards-pic3.png",
+                        "assets/img/PlayingCards/Cards-pic4.png",
+                        "assets/img/PlayingCards/Cards-pic5.png",
+                        "assets/img/PlayingCards/Cards-pic6.png",
+                        "assets/img/PlayingCards/Cards-pic7.png",
+                        "assets/img/PlayingCards/Cards-pic8.png",
+                        "assets/img/PlayingCards/Cards-pic9.png",
+                        "assets/img/PlayingCards/Cards-pic10.png",
+                        "assets/img/PlayingCards/Cards-pic11.png",
+                        "assets/img/PlayingCards/Cards-pic12.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/illustrator.png",
+                    "label": "Illustrator"
+                },
+                {
+                    "src": "assets/img/tools/procreate.png",
+                    "label": "Procreate"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerBgImage": "../img/PlayingCards/cards-bg-bottom.png",
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "owl",
+            "title": "Owl",
+            "bgImage": "../img/owl/owl-bg.png",
+            "detailLine": [
+                "School project",
+                "Sculpting/Texturing/Testing asset",
+                "2024"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "I created a small stylized owl asset, following a game-ready pipeline from sculpting to engine testing. I sculpted the owl in Zbrush, then textured it in Substance Painter. After completing the model, I prepared it for real-time use and imported it into Unity, where I tested it to ensure it behaved correctly and was fully optimized for gameplay. I made a scene in Blender to showcase it with the drawer asset I made for our game, EtherLocked.",
+                    "introHighlights": [
+                        "stylized owl asset",
+                        "game-ready pipeline",
+                        "prepared it for real-time",
+                        "optimized for gameplay"
+                    ],
+                    "gallery": [
+                        "assets/img/owl/owl-pic1.png",
+                        "assets/img/owl/owl-pic2.png",
+                        "assets/img/owl/owl-pic3.png",
+                        "assets/img/owl/owl-pic4.png",
+                        "assets/img/owl/owl-pic5.png",
+                        "assets/img/owl/owl-pic6.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/unity.png",
+                    "label": "Unity"
+                },
+                {
+                    "src": "assets/img/tools/substance.png",
+                    "label": "Substance Painter"
+                },
+                {
+                    "src": "assets/img/tools/zbrush.png",
+                    "label": "ZBrush"
+                },
+                {
+                    "src": "assets/img/tools/blender.png",
+                    "label": "Blender"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "pipes",
+            "title": "Pipes and wrench",
+            "bgImage": "../img/Pipes/pipes-bg.png",
+            "detailLine": [
+                "Personal project",
+                "Modeling/Procedural Texturing/Lighting",
+                "2024-2025"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "This scene combines two assets I originally created in separate school classes: a wrench and a set of industrial pipes. A year later, I revisited both pieces, corrected and optimized the original meshes, then created procedural textures for the pipes and wrench to give them a consistent, realistic material surface. To enhance the presentation, I tested multiple HDRI lighting setups in Blender, choosing those that best showcased the metal textures, reflections, and wear details.",
+                    "introHighlights": [
+                        "combines two assets",
+                        "corrected",
+                        "optimized",
+                        "meshes",
+                        "procedural textures",
+                        "HDRI"
+                    ],
+                    "gallery": [
+                        "assets/img/Pipes/pipes-pic1.png",
+                        "assets/img/Pipes/pipes-pic2.png",
+                        "assets/img/Pipes/pipes-pic3.png",
+                        "assets/img/Pipes/pipes-pic4.png",
+                        "assets/img/Pipes/pipes-pic5.png",
+                        "assets/img/Pipes/pipes-pic6.png",
+                        "assets/img/Pipes/pipes-pic7.png",
+                        "assets/img/Pipes/pipes-pic8.png",
+                        "assets/img/Pipes/pipes-pic9.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/blender.png",
+                    "label": "Blender"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "mimic",
+            "title": "Mimic Chest",
+            "bgImage": "../img/Mimic/mimic-bg.png",
+            "detailLine": [
+                "School project",
+                "Sculpting/Texturing/Rigging/Animating",
+                "2025"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "For this project, I created a mimic, exploring the complete 3D workflow from sculpting to animation. I began by sculpting the creature’s form and details in ZBrush. Afterward, I textured the model in Substance Painter. Once the model was finalized, I imported it into Blender, where I created the rig and set up controls for movement. I then produced a short animation to bring the mimic to life, testing how the sculpt, textures, and rig worked together in motion.",
+                    "introHighlights": [
+                        "exploring",
+                        "3D workflow",
+                        "sculpting",
+                        "textured",
+                        "rig",
+                        "set up controls for movement",
+                        "animation",
+                        "short animation"
+                    ],
+                    "gallery": [
+                        "assets/img/Mimic/mimic-pic1.png",
+                        "assets/img/Mimic/mimic-pic2.png",
+                        "assets/img/Mimic/mimic-pic3.png",
+                        "assets/img/Mimic/mimic-pic4.png",
+                        "assets/img/Mimic/mimic-pic5.png",
+                        "assets/img/Mimic/mimic-pic6.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/substance.png",
+                    "label": "Substance Painter"
+                },
+                {
+                    "src": "assets/img/tools/zbrush.png",
+                    "label": "ZBrush"
+                },
+                {
+                    "src": "assets/img/tools/blender.png",
+                    "label": "Blender"
                 }
             ],
             "social": {

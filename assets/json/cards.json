@@ -40,5 +40,33 @@
         "imageSrc": "assets/img/portfolio/waterpark.png",
         "alt": "waterpark",
         "title": "Waterpark"
+    },
+    {
+        "category": "2d",
+        "slug": "cards",
+        "imageSrc": "assets/img/portfolio/cards.png",
+        "alt": "cards",
+        "title": "Mythology Playing Cards"
+    },
+    {
+        "category": "3d",
+        "slug": "owl",
+        "imageSrc": "assets/img/portfolio/owl.png",
+        "alt": "owl",
+        "title": "Owl"
+    },
+    {
+        "category": "3d",
+        "slug": "pipes",
+        "imageSrc": "assets/img/portfolio/pipes.png",
+        "alt": "pipes",
+        "title": "Pipes and wrench"
+    },
+    {
+        "category": "3d",
+        "slug": "mimic",
+        "imageSrc": "assets/img/portfolio/mimic.png",
+        "alt": "mimic",
+        "title": "Mimic Chest"
     }
 ]
