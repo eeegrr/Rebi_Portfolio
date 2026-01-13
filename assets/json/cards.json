@@ -28,27 +28,6 @@
         "title": "The Cuise"
     },
     {
-        "category": "2d",
-        "slug": "indexo",
-        "imageSrc": "assets/img/portfolio/Indexo.png",
-        "alt": "indexo",
-        "title": "Indexo"
-    },
-    {
-        "category": "2d",
-        "slug": "waterpark",
-        "imageSrc": "assets/img/portfolio/waterpark.png",
-        "alt": "waterpark",
-        "title": "Waterpark"
-    },
-    {
-        "category": "2d",
-        "slug": "cards",
-        "imageSrc": "assets/img/portfolio/cards.png",
-        "alt": "cards",
-        "title": "Mythology Playing Cards"
-    },
-    {
         "category": "3d",
         "slug": "owl",
         "imageSrc": "assets/img/portfolio/owl.png",
