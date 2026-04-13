@@ -21,27 +21,6 @@
         "title": "Diorama"
     },
     {
-        "category": "games",
-        "slug": "suburbs",
-        "imageSrc": "assets/img/portfolio/suburbs.png",
-        "alt": "Suburbs",
-        "title": "Suburbs"
-    },
-    {
-        "category": "games",
-        "slug": "cheese",
-        "imageSrc": "assets/img/CourtCheester/courtcheester-bg.png",
-        "alt": "Cheese",
-        "title": "Court Cheester"
-    },
-    {
-        "category": "games",
-        "slug": "cuise",
-        "imageSrc": "assets/img/portfolio/Cuise.png",
-        "alt": "Cuise",
-        "title": "The Cuise"
-    },
-    {
         "category": "3d",
         "slug": "owl",
         "imageSrc": "assets/img/portfolio/owl.png",
@@ -61,5 +40,26 @@
         "imageSrc": "assets/img/portfolio/mimic.png",
         "alt": "mimic",
         "title": "Mimic Chest"
+    },
+    {
+        "category": "games",
+        "slug": "suburbs",
+        "imageSrc": "assets/img/portfolio/suburbs.png",
+        "alt": "Suburbs",
+        "title": "Suburbs"
+    },
+    {
+        "category": "games",
+        "slug": "cheese",
+        "imageSrc": "assets/img/CourtCheester/courtcheester-bg.png",
+        "alt": "Cheese",
+        "title": "Court Cheester"
+    },
+    {
+        "category": "games",
+        "slug": "cuise",
+        "imageSrc": "assets/img/portfolio/Cuise.png",
+        "alt": "Cuise",
+        "title": "The Cuise"
     }
 ]
