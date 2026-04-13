@@ -64,9 +64,13 @@
                 <p class="contact-description">Let’s make something together</p>
             </div>
 
+            <!-- Main two-column container -->
             <div class="contact-container container">
+
+                <!-- LEFT: Form -->
                 <form action="https://formsubmit.co/77fec499f3b73f360d598e7a6fea1e26" method="POST" class="contact-form"
                     novalidate>
+
                     <!-- Name -->
                     <div class="field" id="field-name">
                         <input class="form-input" type="text" id="name" name="name" placeholder="Name"
@@ -97,14 +101,47 @@
                     </button>
                 </form>
 
-                <!-- Success panel -->
-                <div id="contact-success" class="contact-success" aria-hidden="true" style="display:none;">
+                <!-- RIGHT: Direct contact -->
+                <div class="direct-contact-container">
+
+                    <ul class="contact-list">
+                        <li class="list-item">
+                            <img src="assets/img/facebook-icon.svg" alt="Phone" class="icon">
+                            <span class="contact-text phone">+36 30 480 7490</span>
+                        </li>
+
+                        <li class="list-item">
+                            <img src="assets/img/facebook-icon.svg" alt="Email" class="icon">
+                            <span class="contact-text gmail">rebibab@gmail.com</span>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <div class="contact-social">
+                        <a href="#" class="footer-social-link icon-instagram" aria-label="Instagram"></a>
+
+                        <a href="#" class="footer-social-link icon-facebook" aria-label="Facebook"></a>
+
+                        <a href="#" class="footer-social-link icon-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+
+                    <hr>
+
+                </div>
+
+            </div>
+
+            <!-- Success overlay -->
+            <div id="contact-success" class="contact-success" aria-hidden="true" style="display:none;">
+                <div class="success-card">
                     <h3>Thanks — message sent!</h3>
                     <p>I'll get back to you as soon as possible</p>
                     <button id="success-close" class="pop-btn">Close</button>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!--========== SCROLL UP ==========-->

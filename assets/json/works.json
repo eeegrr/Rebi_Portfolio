@@ -3,7 +3,7 @@
         {
             "slug": "etherlocked",
             "title": "EtherLocked",
-            "playLink": "#",
+            "playLink": "https://eeeggr.itch.io/etherlocked",
             "playIcon": "assets/img/about/download-icon.png",
             "bgImage": "../img/EtherLocked/EtherLocked-bg.png",
             "type": "School project",
@@ -628,6 +628,214 @@
                 {
                     "src": "assets/img/tools/blender.png",
                     "label": "Blender"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "diorama",
+            "title": "Diorama",
+            "bgImage": "../img/Diorama/diorama-bg.png",
+            "detailLine": [
+                "School project",
+                "2026"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "I created this low-poly train station diorama in Blender, featuring flat shading and procedurally generated vegetation using geometry nodes. For this project I focused on scene polishing and experimenting with shader nodes and settings to create a more lively and cohesive environment. For me in every project I make having an easily understandable order system throughout my files is very important. I used PureRef program for reference images so I have a clear goal.",
+                    "introHighlights": [
+                        "geometry nodes",
+                        "polishing and experimenting",
+                        "understandable order system",
+                        "PureRef",
+                        "clear goal"
+                    ],
+                    "gallery": [
+                        "assets/img/Diorama/diorama-pic1.png",
+                        "assets/img/Diorama/diorama-pic2.png",
+                        "assets/img/Diorama/diorama-pic3.png",
+                        "assets/img/Diorama/diorama-pic4.png",
+                        "assets/img/Diorama/diorama-pic5.png",
+                        "assets/img/Diorama/diorama-pic6.png",
+                        "assets/img/Diorama/diorama-pic7.png",
+                        "assets/img/Diorama/diorama-pic8.png",
+                        "assets/img/Diorama/diorama-pic9.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3",
+                        "About 4",
+                        "About 5",
+                        "About 6",
+                        "About 7",
+                        "About 8",
+                        "About 9"
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/blender.png",
+                    "label": "Blender"
+                },
+                {
+                    "src": "assets/img/tools/pureref.png",
+                    "label": "PureRef"
+                }
+            ],
+            "social": {
+                "instagram": "https://www.instagram.com/your_handle",
+                "facebook": "https://www.facebook.com/your_page",
+                "linkedin": "https://www.linkedin.com/in/your_profile"
+            },
+            "footerCopy": "&#169; All Rights Reserved By Forgach Rebeka"
+        },
+        {
+            "slug": "park",
+            "title": "Park environment",
+            "bgImage": "../img/Park/Park-bg.png",
+            "detailLine": [
+                "3D modeling",
+                "Personal project",
+                "2026"
+            ],
+            "sections": [
+                {
+                    "subtitle": "About",
+                    "intro": "I wanted to create multiple game ready objects in a short period of time (approximately one week) for a top-down game idea. Because of the speed and the genre of the game I went with low-poly models.",
+                    "introHighlights": [
+                        "game ready objects",
+                        "one week",
+                        "low-poly"
+                    ],
+                    "gallery": [
+                        "assets/img/Park/park-pic1.png",
+                        "assets/img/Park/park-pic2.png",
+                        "assets/img/Park/park-pic3.png"
+                    ],
+                    "galleryAlts": [
+                        "About 1",
+                        "About 2",
+                        "About 3"
+                    ]
+                },
+                {
+                    "subtitle": "Modeling",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "I modeled everything keeping in mind the low poly count and where it was due I shaded the edges smooth (or in the case of the benches, I mostly used weighted normals). I made sure to delete the faces that are not going to be visible.",
+                            "highlights": [
+                                "low poly count",
+                                "shaded the edges smooth",
+                                "weighted normals",
+                                "delete the faces that are not going to be visible"
+                            ]
+                        },
+                        {
+                            "type": "gallery",
+                            "images": [
+                                "assets/img/Park/park-pic4.png",
+                                "assets/img/Park/park-pic5.png",
+                                "assets/img/Park/park-pic6.png",
+                                "assets/img/Park/park-pic7.png",
+                                "assets/img/Park/park-pic8.png",
+                                "assets/img/Park/park-pic9.png"
+                            ],
+                            "alts": [
+                                "Modeling 1",
+                                "Modeling 2",
+                                "Modeling 3",
+                                "Modeling 4",
+                                "Modeling 5",
+                                "Modeling 6"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "At the beginning I was going to make textures in Substance Painter, so I made a high poly sandwich where the different ingredients could be separated as my first model."
+                        },
+                        {
+                            "type": "gallery",
+                            "images": [
+                                "assets/img/Park/park-pic10.png",
+                                "assets/img/Park/park-pic11.png",
+                                "assets/img/Park/park-pic12.png"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": " Later on there was no need for these assets so I simplified them as much as I could."
+                        },
+                        {
+                            "type": "gallery",
+                            "images": [
+                                "assets/img/Park/park-pic13.png",
+                                "assets/img/Park/park-pic2.png"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "subtitle": "Export and import",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "After making sure that all the assets have their origin point at a reasonable place and all the transformations are applied, I knew there can’t be a lot of surprises when I import them into Unity.<br><br>After importing every FBX file into Unity, I made a “zoo” scene, where all the prefabs are showcased in a dedicated scene so every color and size can be seen immediately, and find assets more easily. I created materials for them inside the engine.",
+                            "highlights": [
+                                "origin point at a reasonable place",
+                                "transformations are applied",
+                                "zoo scene",
+                                "showcased in a dedicated scene",
+                                "created materials for them inside the engine"
+                            ]
+                        },
+                        {
+                            "type": "gallery",
+                            "images": [
+                                "assets/img/Park/park-pic14.png",
+                                "assets/img/Park/park-pic15.png",
+                                "assets/img/Park/park-pic16.png"
+                            ],
+                            "alts": [
+                                "3D Art 1",
+                                "3D Art 2",
+                                "3D Art 3"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "I also created an example environment out of these assets."
+                        },
+                        {
+                            "type": "gallery",
+                            "images": [
+                                "assets/img/Park/park-pic17.png",
+                                "assets/img/Park/park-pic18.png"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "src": "assets/img/tools/unity.png",
+                    "label": "Unity"
+                },
+                {
+                    "src": "assets/img/tools/blender.png",
+                    "label": "Blender"
+                },
+                {
+                    "src": "assets/img/tools/pureref.png",
+                    "label": "PureRef"
                 }
             ],
             "social": {

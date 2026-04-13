@@ -667,10 +667,15 @@ img {
 
 /*=============== CONTACT ===============*/
 
-/* Layout / container */
-.contact-container {
-  padding-top: 2rem;
-  row-gap: 2rem;
+/* Visual vignette */
+.contact {
+  position: relative;
+  z-index: 0;
+}
+
+.contact>* {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-description {
@@ -681,13 +686,29 @@ img {
   font-weight: var(--font-italice);
 }
 
-/* Form base */
+/* Layout / container (TWO COLUMNS) */
+.contact-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* LEFT: Form (FULL WIDTH OF LEFT COLUMN) */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  max-width: 28rem;
-  margin-inline: auto;
+
+  flex: 1;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
   background: transparent;
   z-index: 1;
 }
@@ -749,34 +770,89 @@ img {
   border-color: #b01414;
 }
 
-/* Visual vignette */
-.contact {
-  position: relative;
-  z-index: 0;
+/* RIGHT SIDE (FULL WIDTH OF RIGHT COLUMN, LEFT-ALIGNED) */
+.direct-contact-container {
+  flex: 1;
+  width: 100%;
+  text-align: left;
 }
 
-.contact::after {
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(16px);
-  background: radial-gradient(circle,
-      rgba(19, 20, 13, 1) 0 200px,
-      rgba(19, 20, 13, 0) 400px);
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.contact>* {
-  position: relative;
-  z-index: 1;
+.list-item {
+  color: var(--white-color);
+  line-height: 4;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Success overlay (full-screen, transparent/frosted) */
+/* Contact list images: smaller, consistent, aligned */
+.contact-list .icon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  object-fit: contain;
+  flex: 0 0 32px;
+}
+
+/* Keep text consistent */
+.contact-text {
+  display: inline-block;
+  color: var(--white-color);
+}
+
+/* ===== Social Media (inline SVG icons) ===== */
+
+.contact-social {
+  display: flex;
+  column-gap: .75rem;
+  justify-content: initial;
+  padding: 1rem 0;
+}
+
+.contact-social-link {
+  color: var(--text-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+
+  transition: color .4s;
+}
+
+.contact-social-link:hover,
+.contact-social-link:focus-visible {
+  color: var(--first-color);
+}
+
+hr {
+  border-color: var(--first-color);
+}
+
+/* ===== Responsive: stack on mobile ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .place,
+  .phone,
+  .gmail {
+    margin-left: 0;
+    /* no longer needed because we use flex gap */
+  }
+}
+
+/* ===== Success overlay (full-screen, transparent/frosted) ===== */
 #contact-success {
   position: fixed;
   inset: 0;
@@ -817,7 +893,6 @@ img {
   opacity: 1;
 }
 
-/* Typography & button inside overlay */
 #contact-success .success-card h3 {
   margin: 0 0 .5rem;
   font-size: var(--h1-font-size);
@@ -852,8 +927,6 @@ img {
 #contact-success[aria-hidden="false"] {
   display: flex;
 }
-
-
 
 /*=============== FOOTER ===============*/
 .footer {
@@ -1016,7 +1089,7 @@ img {
   text-align: center;
   color: var(--white-color);
   font-weight: var(--font-italice);
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .work-description span {
@@ -1673,7 +1746,6 @@ img {
   .contact-container {
     grid-template-columns: 280px 480px;
     justify-content: center;
-    align-items: center;
     column-gap: 8rem;
   }
 
@@ -1681,10 +1753,6 @@ img {
     order: -1;
     text-align: initial;
     row-gap: 2.5rem;
-  }
-
-  .contact-social {
-    justify-content: initial;
   }
 
   .contact-img {

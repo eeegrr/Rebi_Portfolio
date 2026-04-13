@@ -237,12 +237,10 @@ function populatePage(d) {
     const dividerAfterHeader = document.querySelector('hr.section-divider'); // the first divider in the HTML
 
     if (Array.isArray(d.sections) && d.sections.length && mainEl && placeholderSection) {
-        // remove the original placeholder section (we will build all sections)
         placeholderSection.remove();
 
-        // if the HTML had a fixed divider right after placeholder, remove it (we will insert our own)
         if (dividerAfterHeader && dividerAfterHeader.previousElementSibling?.matches('section.picture') === false) {
-            // keep it if not following a picture section; otherwise, remove
+            // keep it
         } else if (dividerAfterHeader) {
             dividerAfterHeader.remove();
         }
@@ -251,90 +249,110 @@ function populatePage(d) {
             const section = document.createElement('section');
             section.className = 'picture';
 
-            // subtitle (optional; default varies)
-            const subtitle = document.createElement('h3');
-            subtitle.className = 'section-subtitle';
+            // subtitle
             if (sec.subtitle) {
+                const subtitle = document.createElement('h3');
+                subtitle.className = 'section-subtitle';
                 subtitle.textContent = sec.subtitle;
                 section.appendChild(subtitle);
             }
 
-            // intro (optional, supports highlights)
-            if (sec.intro) {
-                const p = document.createElement('p');
-                p.className = 'work-description container';
-                if (Array.isArray(sec.introHighlights) && sec.introHighlights.length) {
-                    p.innerHTML = wrapHighlights(sec.intro, sec.introHighlights);
-                } else {
-                    p.textContent = sec.intro;
-                }
-                section.appendChild(p);
-            }
+            // NEW: flexible content blocks
+            if (Array.isArray(sec.content) && sec.content.length) {
+                sec.content.forEach((block, blockIndex) => {
+                    if (!block || !block.type) return;
 
-            // gallery (optional)
-            if (Array.isArray(sec.gallery) && sec.gallery.length) {
-                const galleryWrap = document.createElement('div');
-                galleryWrap.className = 'picture-gallery';
-                const grid = document.createElement('div');
-                const baseClass = 'picture-container grid';
-                if (sec.usePictureContainer4) {
-                    grid.className = `${baseClass} picture-container--4`;
-                } else {
-                    grid.className = baseClass;
-                }
+                    // TEXT BLOCK
+                    if (block.type === 'text') {
+                        const p = document.createElement('p');
+                        p.className = 'work-description container';
 
+                        if (Array.isArray(block.highlights) && block.highlights.length) {
+                            p.innerHTML = wrapHighlights(block.text || '', block.highlights);
+                        } else {
+                            p.textContent = block.text || '';
+                        }
 
-                sec.gallery.forEach((src, i) => {
-                    const alt = (Array.isArray(sec.galleryAlts) && sec.galleryAlts[i])
-                        ? sec.galleryAlts[i]
-                        : `Screenshot ${i + 1}`;
-                    grid.appendChild(createImg(src, alt, 'picture-img'));
+                        section.appendChild(p);
+                    }
+
+                    // GALLERY BLOCK
+                    if (block.type === 'gallery') {
+                        const galleryWrap = document.createElement('div');
+                        galleryWrap.className = 'picture-gallery';
+
+                        const grid = document.createElement('div');
+                        const baseClass = 'picture-container grid';
+
+                        if (block.usePictureContainer4) {
+                            grid.className = `${baseClass} picture-container--4`;
+                        } else {
+                            grid.className = baseClass;
+                        }
+
+                        if (Array.isArray(block.images)) {
+                            block.images.forEach((src, i) => {
+                                const alt = (Array.isArray(block.alts) && block.alts[i])
+                                    ? block.alts[i]
+                                    : `Screenshot ${i + 1}`;
+
+                                grid.appendChild(createImg(src, alt, 'picture-img'));
+                            });
+                        }
+
+                        galleryWrap.appendChild(grid);
+                        section.appendChild(galleryWrap);
+                    }
                 });
+            } else {
+                // fallback for old structure
+                if (sec.intro) {
+                    const p = document.createElement('p');
+                    p.className = 'work-description container';
 
-                galleryWrap.appendChild(grid);
-                section.appendChild(galleryWrap);
+                    if (Array.isArray(sec.introHighlights) && sec.introHighlights.length) {
+                        p.innerHTML = wrapHighlights(sec.intro, sec.introHighlights);
+                    } else {
+                        p.textContent = sec.intro;
+                    }
+
+                    section.appendChild(p);
+                }
+
+                if (Array.isArray(sec.gallery) && sec.gallery.length) {
+                    const galleryWrap = document.createElement('div');
+                    galleryWrap.className = 'picture-gallery';
+
+                    const grid = document.createElement('div');
+                    const baseClass = 'picture-container grid';
+
+                    if (sec.usePictureContainer4) {
+                        grid.className = `${baseClass} picture-container--4`;
+                    } else {
+                        grid.className = baseClass;
+                    }
+
+                    sec.gallery.forEach((src, i) => {
+                        const alt = (Array.isArray(sec.galleryAlts) && sec.galleryAlts[i])
+                            ? sec.galleryAlts[i]
+                            : `Screenshot ${i + 1}`;
+
+                        grid.appendChild(createImg(src, alt, 'picture-img'));
+                    });
+
+                    galleryWrap.appendChild(grid);
+                    section.appendChild(galleryWrap);
+                }
             }
 
-            // append section
             mainEl.appendChild(section);
 
-            // add divider between sections (not after the last one)
             if (idx < d.sections.length - 1) {
                 const hr = document.createElement('hr');
                 hr.className = 'section-divider';
                 mainEl.appendChild(hr);
             }
         });
-    } else {
-        // Legacy single-section support (uses the existing section in HTML)
-        const introEl = $('.picture .work-description');
-        if (introEl) {
-            if (d.intro) {
-                if (Array.isArray(d.introHighlights) && d.introHighlights.length) {
-                    introEl.innerHTML = wrapHighlights(d.intro, d.introHighlights);
-                } else {
-                    introEl.textContent = d.intro;
-                }
-            } else {
-                introEl.remove();
-            }
-        }
-
-        const galleryContainer = $('.picture .picture-container.grid');
-        const pictureSection = $('section.picture');
-        if (galleryContainer) {
-            if (Array.isArray(d.gallery) && d.gallery.length) {
-                galleryContainer.innerHTML = '';
-                d.gallery.forEach((src, i) => {
-                    const alt = (Array.isArray(d.galleryAlts) && d.galleryAlts[i]) ? d.galleryAlts[i] : `Screenshot ${i + 1}`;
-                    galleryContainer.appendChild(createImg(src, alt, 'picture-img'));
-                });
-            } else if (pictureSection) {
-                const hasIntro = !!d.intro;
-                if (!hasIntro) pictureSection.remove();
-                else galleryContainer.innerHTML = '';
-            }
-        }
     }
 
     // ---- TOOLS ----

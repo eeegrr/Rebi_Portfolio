@@ -7,6 +7,20 @@
         "title": "EtherLocked"
     },
     {
+        "category": "3d",
+        "slug": "park",
+        "imageSrc": "assets/img/portfolio/park.png",
+        "alt": "park",
+        "title": "Park environment"
+    },
+    {
+        "category": "3d",
+        "slug": "diorama",
+        "imageSrc": "assets/img/portfolio/diorama.png",
+        "alt": "diorama",
+        "title": "Diorama"
+    },
+    {
         "category": "games",
         "slug": "suburbs",
         "imageSrc": "assets/img/portfolio/suburbs.png",
