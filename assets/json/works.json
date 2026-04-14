@@ -1003,9 +1003,9 @@
                         {
                             "type": "gallery",
                             "images": [
-                                "assets/img/Falsesun/FalseSun-pic1.png",
-                                "assets/img/Falsesun/FalseSun-pic2.png",
-                                "assets/img/Falsesun/FalseSun-pic3.png"
+                                "assets/img/FalseSun/FalseSun-pic1.png",
+                                "assets/img/FalseSun/FalseSun-pic2.png",
+                                "assets/img/FalseSun/FalseSun-pic3.png"
                             ],
                             "alts": [
                                 "About 1",
