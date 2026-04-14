@@ -257,10 +257,18 @@ function populatePage(d) {
                 section.appendChild(subtitle);
             }
 
-            // NEW: flexible content blocks
+
             if (Array.isArray(sec.content) && sec.content.length) {
                 sec.content.forEach((block, blockIndex) => {
                     if (!block || !block.type) return;
+
+                    // SUBTITLE BLOCK
+                    if (block.type === 'subtitle') {
+                        const subtitle = document.createElement('h3');
+                        subtitle.className = 'section-subtitle';
+                        subtitle.textContent = block.text || '';
+                        section.appendChild(subtitle);
+                    }
 
                     // TEXT BLOCK
                     if (block.type === 'text') {
@@ -304,45 +312,6 @@ function populatePage(d) {
                         section.appendChild(galleryWrap);
                     }
                 });
-            } else {
-                // fallback for old structure
-                if (sec.intro) {
-                    const p = document.createElement('p');
-                    p.className = 'work-description container';
-
-                    if (Array.isArray(sec.introHighlights) && sec.introHighlights.length) {
-                        p.innerHTML = wrapHighlights(sec.intro, sec.introHighlights);
-                    } else {
-                        p.textContent = sec.intro;
-                    }
-
-                    section.appendChild(p);
-                }
-
-                if (Array.isArray(sec.gallery) && sec.gallery.length) {
-                    const galleryWrap = document.createElement('div');
-                    galleryWrap.className = 'picture-gallery';
-
-                    const grid = document.createElement('div');
-                    const baseClass = 'picture-container grid';
-
-                    if (sec.usePictureContainer4) {
-                        grid.className = `${baseClass} picture-container--4`;
-                    } else {
-                        grid.className = baseClass;
-                    }
-
-                    sec.gallery.forEach((src, i) => {
-                        const alt = (Array.isArray(sec.galleryAlts) && sec.galleryAlts[i])
-                            ? sec.galleryAlts[i]
-                            : `Screenshot ${i + 1}`;
-
-                        grid.appendChild(createImg(src, alt, 'picture-img'));
-                    });
-
-                    galleryWrap.appendChild(grid);
-                    section.appendChild(galleryWrap);
-                }
             }
 
             mainEl.appendChild(section);
